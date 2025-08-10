@@ -1,0 +1,6 @@
+@use '@/style/common' as common;
+
+.layout {
+  @include common.reset;
+  color: #999;
+}
