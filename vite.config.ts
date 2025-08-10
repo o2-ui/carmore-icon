@@ -40,6 +40,7 @@ export default defineConfig({
         'ui/PinMap/index': resolve(__dirname, 'src/ui/PinMap/index.tsx'),
         'ui/Refresh/index': resolve(__dirname, 'src/ui/Refresh/index.tsx'),
         'ui/Search/index': resolve(__dirname, 'src/ui/Search/index.tsx'),
+        'ui/Share/index': resolve(__dirname, 'src/ui/Share/index.tsx'),
         'ui/StepperMinus/index': resolve(__dirname, 'src/ui/StepperMinus/index.tsx'),
         'ui/StepperPlus/index': resolve(__dirname, 'src/ui/StepperPlus/index.tsx'),
         'ui/SwitchArrow/index': resolve(__dirname, 'src/ui/SwitchArrow/index.tsx'),
