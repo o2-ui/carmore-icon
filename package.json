@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "type": "module",
   "exports": {
     "./BackBtn": {
@@ -34,6 +34,10 @@
     "./StepperPlus": {
       "import": "./dist/ui/StepperPlus/index.js",
       "types": "./dist/ui/StepperPlus/index.d.ts"
+    },
+    "./SwitchArrow": {
+      "import": "./dist/ui/SwitchArrow/index.js",
+      "types": "./dist/ui/SwitchArrow/index.d.ts"
     },
     "./index.css": {
       "default": "./dist/index.css"
