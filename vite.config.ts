@@ -34,6 +34,7 @@ export default defineConfig({
     lib: {
       entry: {
         'ui/BackBtn/index': resolve(__dirname, 'src/ui/BackBtn/index.tsx'),
+        'ui/Check/index': resolve(__dirname, 'src/ui/Check/index.tsx'),
         'ui/LoadingSpinner/index': resolve(__dirname, 'src/ui/LoadingSpinner/index.tsx'),
         'ui/PinMap/index': resolve(__dirname, 'src/ui/PinMap/index.tsx'),
       },
