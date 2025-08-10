@@ -1,0 +1,24 @@
+@use '@/style/common' as common;
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.layout {
+  @include common.reset;
+  cursor: wait;
+
+  &__background {
+    stroke: #f3f3f3;
+  }
+  &__foreground {
+    stroke: #aab4c6;
+  }
+}
+
+.spinAnimation {
+  animation: spin 1000ms ease 0ms infinite;
+  transform-origin: 50% 50%;
+}
