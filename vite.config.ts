@@ -21,7 +21,7 @@ export default defineConfig({
       // SSR 시 클래스명이 서버/클라이언트 동일하도록 결정적 네이밍
       // (컴포넌트명__로컬명__해시)
       generateScopedName: '[name]__[local]__[hash:base64:5]',
-      localsConvention: 'camelCaseOnly',
+      localsConvention: 'camelCase',
     },
   },
   build: {
