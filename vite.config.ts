@@ -38,6 +38,7 @@ export default defineConfig({
         'ui/Copy/index': resolve(__dirname, 'src/ui/Copy/index.tsx'),
         'ui/LoadingSpinner/index': resolve(__dirname, 'src/ui/LoadingSpinner/index.tsx'),
         'ui/PinMap/index': resolve(__dirname, 'src/ui/PinMap/index.tsx'),
+        'ui/Refresh/index': resolve(__dirname, 'src/ui/Refresh/index.tsx'),
         'ui/StepperMinus/index': resolve(__dirname, 'src/ui/StepperMinus/index.tsx'),
         'ui/StepperPlus/index': resolve(__dirname, 'src/ui/StepperPlus/index.tsx'),
       },

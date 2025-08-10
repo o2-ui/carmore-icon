@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "type": "module",
   "exports": {
     "./BackBtn": {
@@ -22,6 +22,10 @@
     "./PinMap": {
       "import": "./dist/ui/PinMap/index.js",
       "types": "./dist/ui/PinMap/index.d.ts"
+    },
+    "./Refresh": {
+      "import": "./dist/ui/Refresh/index.js",
+      "types": "./dist/ui/Refresh/index.d.ts"
     },
     "./StepperMinus": {
       "import": "./dist/ui/StepperMinus/index.js",
