@@ -35,6 +35,7 @@ export default defineConfig({
       entry: {
         'ui/BackBtn/index': resolve(__dirname, 'src/ui/BackBtn/index.tsx'),
         'ui/LoadingSpinner/index': resolve(__dirname, 'src/ui/LoadingSpinner/index.tsx'),
+        'ui/PinMap/index': resolve(__dirname, 'src/ui/PinMap/index.tsx'),
       },
       // 빌드할 모듈 형식을 지정. (ES Modules 만)
       formats: ['es'],
