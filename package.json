@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "type": "module",
   "exports": {
     "./BackBtn": {
@@ -38,6 +38,10 @@
     "./Search": {
       "import": "./dist/ui/Search/index.js",
       "types": "./dist/ui/Search/index.d.ts"
+    },
+    "./Setting": {
+      "import": "./dist/ui/Setting/index.js",
+      "types": "./dist/ui/Setting/index.d.ts"
     },
     "./Share": {
       "import": "./dist/ui/Share/index.js",
