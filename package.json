@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "type": "module",
   "exports": {
     "./BackBtn": {
@@ -22,6 +22,10 @@
     "./LoadingSpinner": {
       "import": "./dist/ui/LoadingSpinner/index.js",
       "types": "./dist/ui/LoadingSpinner/index.d.ts"
+    },
+    "./Nowhere": {
+      "import": "./dist/ui/Nowhere/index.js",
+      "types": "./dist/ui/Nowhere/index.d.ts"
     },
     "./PinMap": {
       "import": "./dist/ui/PinMap/index.js",
