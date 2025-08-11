@@ -1,8 +1,12 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "type": "module",
   "exports": {
+    "./ArrowDown": {
+      "import": "./dist/ui/ArrowDown/index.js",
+      "types": "./dist/ui/ArrowDown/index.d.ts"
+    },
     "./BackBtn": {
       "import": "./dist/ui/BackBtn/index.js",
       "types": "./dist/ui/BackBtn/index.d.ts"
