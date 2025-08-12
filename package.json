@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.23.0",
+  "version": "0.24.0",
   "type": "module",
   "exports": {
     "./ArrowDoubleDown": {
@@ -94,6 +94,10 @@
     "./SwitchArrow": {
       "import": "./dist/ui/SwitchArrow/index.js",
       "types": "./dist/ui/SwitchArrow/index.d.ts"
+    },
+    "./User": {
+      "import": "./dist/ui/User/index.js",
+      "types": "./dist/ui/User/index.d.ts"
     },
     "./index.css": {
       "default": "./dist/index.css"

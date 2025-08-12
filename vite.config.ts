@@ -56,6 +56,7 @@ export default defineConfig({
         'ui/StepperMinus/index': resolve(__dirname, 'src/ui/StepperMinus/index.tsx'),
         'ui/StepperPlus/index': resolve(__dirname, 'src/ui/StepperPlus/index.tsx'),
         'ui/SwitchArrow/index': resolve(__dirname, 'src/ui/SwitchArrow/index.tsx'),
+        'ui/User/index': resolve(__dirname, 'src/ui/User/index.tsx'),
       },
       // 빌드할 모듈 형식을 지정. (ES Modules 만)
       formats: ['es'],
