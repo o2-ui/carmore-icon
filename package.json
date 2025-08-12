@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "type": "module",
   "exports": {
     "./ArrowDoubleDown": {
@@ -26,6 +26,10 @@
     "./Cancel": {
       "import": "./dist/ui/Cancel/index.js",
       "types": "./dist/ui/Cancel/index.d.ts"
+    },
+    "./Chat": {
+      "import": "./dist/ui/Chat/index.js",
+      "types": "./dist/ui/Chat/index.d.ts"
     },
     "./Check": {
       "import": "./dist/ui/Check/index.js",

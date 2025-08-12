@@ -39,6 +39,7 @@ export default defineConfig({
         'ui/ArrowUp/index': resolve(__dirname, 'src/ui/ArrowUp/index.tsx'),
         'ui/BackBtn/index': resolve(__dirname, 'src/ui/BackBtn/index.tsx'),
         'ui/Cancel/index': resolve(__dirname, 'src/ui/Cancel/index.tsx'),
+        'ui/Chat/index': resolve(__dirname, 'src/ui/Chat/index.tsx'),
         'ui/Check/index': resolve(__dirname, 'src/ui/Check/index.tsx'),
         'ui/Copy/index': resolve(__dirname, 'src/ui/Copy/index.tsx'),
         'ui/CopyLink/index': resolve(__dirname, 'src/ui/CopyLink/index.tsx'),
