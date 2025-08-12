@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.24.0",
+  "version": "0.25.0",
   "type": "module",
   "exports": {
     "./ArrowDoubleDown": {
@@ -42,6 +42,10 @@
     "./CopyLink": {
       "import": "./dist/ui/CopyLink/index.js",
       "types": "./dist/ui/CopyLink/index.d.ts"
+    },
+    "./CS": {
+      "import": "./dist/ui/CS/index.js",
+      "types": "./dist/ui/CS/index.d.ts"
     },
     "./Download": {
       "import": "./dist/ui/Download/index.js",

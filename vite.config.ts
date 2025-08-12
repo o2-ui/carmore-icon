@@ -43,6 +43,7 @@ export default defineConfig({
         'ui/Check/index': resolve(__dirname, 'src/ui/Check/index.tsx'),
         'ui/Copy/index': resolve(__dirname, 'src/ui/Copy/index.tsx'),
         'ui/CopyLink/index': resolve(__dirname, 'src/ui/CopyLink/index.tsx'),
+        'ui/CS/index': resolve(__dirname, 'src/ui/CS/index.tsx'),
         'ui/Download/index': resolve(__dirname, 'src/ui/Download/index.tsx'),
         'ui/LoadingSpinner/index': resolve(__dirname, 'src/ui/LoadingSpinner/index.tsx'),
         'ui/PinMap/index': resolve(__dirname, 'src/ui/PinMap/index.tsx'),
