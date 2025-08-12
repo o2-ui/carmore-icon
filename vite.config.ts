@@ -46,6 +46,7 @@ export default defineConfig({
         'ui/LoadingSpinner/index': resolve(__dirname, 'src/ui/LoadingSpinner/index.tsx'),
         'ui/PinMap/index': resolve(__dirname, 'src/ui/PinMap/index.tsx'),
         'ui/Nowhere/index': resolve(__dirname, 'src/ui/Nowhere/index.tsx'),
+        'ui/OutLink/index': resolve(__dirname, 'src/ui/OutLink/index.tsx'),
         'ui/Refresh/index': resolve(__dirname, 'src/ui/Refresh/index.tsx'),
         'ui/Search/index': resolve(__dirname, 'src/ui/Search/index.tsx'),
         'ui/Setting/index': resolve(__dirname, 'src/ui/Setting/index.tsx'),

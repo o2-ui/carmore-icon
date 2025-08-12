@@ -1,6 +1,6 @@
 {
   "name": "@o2-ui/react-icon",
-  "version": "0.20.0",
+  "version": "0.21.0",
   "type": "module",
   "exports": {
     "./ArrowDoubleDown": {
@@ -50,6 +50,10 @@
     "./Nowhere": {
       "import": "./dist/ui/Nowhere/index.js",
       "types": "./dist/ui/Nowhere/index.d.ts"
+    },
+    "./OutLink": {
+      "import": "./dist/ui/OutLink/index.js",
+      "types": "./dist/ui/OutLink/index.d.ts"
     },
     "./PinMap": {
       "import": "./dist/ui/PinMap/index.js",
