@@ -33,6 +33,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
+        'ui/ArrowDoubleDown/index': resolve(__dirname, 'src/ui/ArrowDoubleDown/index.tsx'),
         'ui/ArrowDown/index': resolve(__dirname, 'src/ui/ArrowDown/index.tsx'),
         'ui/ArrowUp/index': resolve(__dirname, 'src/ui/ArrowUp/index.tsx'),
         'ui/BackBtn/index': resolve(__dirname, 'src/ui/BackBtn/index.tsx'),
