@@ -3,110 +3,17 @@
   "version": "0.25.0",
   "type": "module",
   "exports": {
-    "./ArrowDoubleDown": {
-      "import": "./dist/ui/ArrowDoubleDown/index.js",
-      "types": "./dist/ui/ArrowDoubleDown/index.d.ts"
-    },
-    "./ArrowDoubleUp": {
-      "import": "./dist/ui/ArrowDoubleUp/index.js",
-      "types": "./dist/ui/ArrowDoubleUp/index.d.ts"
-    },
-    "./ArrowDown": {
-      "import": "./dist/ui/ArrowDown/index.js",
-      "types": "./dist/ui/ArrowDown/index.d.ts"
-    },
-    "./ArrowUp": {
-      "import": "./dist/ui/ArrowUp/index.js",
-      "types": "./dist/ui/ArrowUp/index.d.ts"
-    },
-    "./BackBtn": {
-      "import": "./dist/ui/BackBtn/index.js",
-      "types": "./dist/ui/BackBtn/index.d.ts"
-    },
-    "./Cancel": {
-      "import": "./dist/ui/Cancel/index.js",
-      "types": "./dist/ui/Cancel/index.d.ts"
-    },
-    "./Chat": {
-      "import": "./dist/ui/Chat/index.js",
-      "types": "./dist/ui/Chat/index.d.ts"
-    },
-    "./Check": {
-      "import": "./dist/ui/Check/index.js",
-      "types": "./dist/ui/Check/index.d.ts"
-    },
-    "./Copy": {
-      "import": "./dist/ui/Copy/index.js",
-      "types": "./dist/ui/Copy/index.d.ts"
-    },
-    "./CopyLink": {
-      "import": "./dist/ui/CopyLink/index.js",
-      "types": "./dist/ui/CopyLink/index.d.ts"
-    },
-    "./CS": {
-      "import": "./dist/ui/CS/index.js",
-      "types": "./dist/ui/CS/index.d.ts"
-    },
-    "./Download": {
-      "import": "./dist/ui/Download/index.js",
-      "types": "./dist/ui/Download/index.d.ts"
-    },
-    "./LoadingSpinner": {
-      "import": "./dist/ui/LoadingSpinner/index.js",
-      "types": "./dist/ui/LoadingSpinner/index.d.ts"
-    },
-    "./Nowhere": {
-      "import": "./dist/ui/Nowhere/index.js",
-      "types": "./dist/ui/Nowhere/index.d.ts"
-    },
-    "./OutLink": {
-      "import": "./dist/ui/OutLink/index.js",
-      "types": "./dist/ui/OutLink/index.d.ts"
-    },
-    "./PinMap": {
-      "import": "./dist/ui/PinMap/index.js",
-      "types": "./dist/ui/PinMap/index.d.ts"
-    },
-    "./Refresh": {
-      "import": "./dist/ui/Refresh/index.js",
-      "types": "./dist/ui/Refresh/index.d.ts"
-    },
-    "./Reply": {
-      "import": "./dist/ui/Reply/index.js",
-      "types": "./dist/ui/Reply/index.d.ts"
-    },
-    "./Search": {
-      "import": "./dist/ui/Search/index.js",
-      "types": "./dist/ui/Search/index.d.ts"
-    },
-    "./Setting": {
-      "import": "./dist/ui/Setting/index.js",
-      "types": "./dist/ui/Setting/index.d.ts"
-    },
-    "./Share": {
-      "import": "./dist/ui/Share/index.js",
-      "types": "./dist/ui/Share/index.d.ts"
-    },
-    "./StepperMinus": {
-      "import": "./dist/ui/StepperMinus/index.js",
-      "types": "./dist/ui/StepperMinus/index.d.ts"
-    },
-    "./StepperPlus": {
-      "import": "./dist/ui/StepperPlus/index.js",
-      "types": "./dist/ui/StepperPlus/index.d.ts"
-    },
-    "./SwitchArrow": {
-      "import": "./dist/ui/SwitchArrow/index.js",
-      "types": "./dist/ui/SwitchArrow/index.d.ts"
-    },
-    "./User": {
-      "import": "./dist/ui/User/index.js",
-      "types": "./dist/ui/User/index.d.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./index.css": {
       "default": "./dist/index.css"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "LICENSE",
