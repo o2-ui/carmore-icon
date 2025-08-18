@@ -1,5 +1,9 @@
 {
   "name": "@o2-ui/react-icon",
+  "author": {
+    "name": "Jeff Lee",
+    "email": "jeff@teamo2.kr"
+  },
   "version": "0.26.0",
   "type": "module",
   "exports": {
