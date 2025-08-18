@@ -1,0 +1,60 @@
+import type { AriaRole, SVGProps } from 'react';
+
+import React from 'react';
+
+import style from './style.module.scss';
+
+import { getElementId, mergeClassNames } from '@/util/string-helper';
+
+/**
+ * @description SVG 아이콘 을 랜더링합니다.
+ * @param props - SVGProps를 상속받은 props 객체.
+ * @param {string} [props.className] - css 클래스.
+ * @param {string} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
+ * @param {string} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
+ * @remarks 웹 접근성을 위해 `role`, `aria-label` 등의 a11y 관련 props 설정을 권장합니다.
+ */
+const CountryFlagUS = (props: SVGProps<SVGSVGElement>) => {
+  const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
+
+  const iconWidth: string | number = width || '1.5rem';
+  const iconHeight: string | number = height || '1.5rem';
+
+  const maskId = getElementId('COUNTRY_FLAG_US_MASK_ID');
+
+  /* a11y 기본설정 */
+  const iconRole: AriaRole = role || 'img';
+  const titleId = getElementId('COUNTRY_FLAG_US');
+  const titleText = ariaLabel || '미국';
+
+  return (
+    <svg className={mergeClassNames(style.layout, className)} viewBox={'0 0 24 16'} width={iconWidth} height={iconHeight} fill={'none'} role={iconRole} aria-labelledby={titleId} {...rest}>
+      <title id={titleId}>{titleText}</title>
+
+      <defs>
+        <mask id={maskId} maskUnits="userSpaceOnUse" x={0} y={0} width={24} height={16}>
+          <rect x={0.923096} y={0.615234} width={22.1538} height={14.7692} rx={2} fill={'#fff'} />
+        </mask>
+      </defs>
+
+      <g mask={`url(#${maskId})`}>
+        <path d={'M0.923096 0.615234H23.0769V15.3845H0.923096V0.615234Z'} fill={'#fff'} />
+        <path
+          d={
+            'M0.923096 0.615234H23.0769V1.751H0.923096V0.615234ZM0.923096 2.88676H23.0769V4.02252H0.923096V2.88676ZM0.923096 5.15828H23.0769V6.29405H0.923096V5.15828ZM0.923096 7.42981H23.0769V8.56557H0.923096V7.42981ZM0.923096 9.70565H23.0769V10.8414H0.923096V9.70565ZM0.923096 11.9772H23.0769V13.1129H0.923096V11.9772ZM0.923096 14.2487H23.0769V15.3845H0.923096V14.2487Z'
+          }
+          fill={'#D80027'}
+        />
+        <path d={'M0.923096 0.615234H12V8.56557H0.923096V0.615234Z'} fill={'#2E52B2'} />
+        <path
+          d={
+            'M2.98736 6.61384L2.81462 6.06108L2.62461 6.61384H2.05457L2.51664 6.94637L2.3439 7.49913L2.81462 7.15797L3.27238 7.49913L3.09532 6.94637L3.56604 6.61384H2.98736ZM5.41867 6.61384L5.24161 6.06108L5.06023 6.61384H4.49019L4.95227 6.94637L4.77953 7.49913L5.24161 7.15797L5.70801 7.49913L5.53527 6.94637L5.99735 6.61384H5.41867ZM7.85862 6.61384L7.67292 6.06108L7.50018 6.61384H6.91719L7.39222 6.94637L7.21084 7.49913L7.67292 7.15797L8.14795 7.49913L7.96658 6.94637L8.42866 6.61384H7.85862ZM10.2856 6.61384L10.1129 6.06108L9.93149 6.61384H9.35713L9.82353 6.94637L9.65079 7.49913L10.1129 7.15797L10.5793 7.49913L10.3936 6.94637L10.8686 6.61384H10.2856ZM5.24161 3.86728L5.06023 4.42005H4.49019L4.95227 4.76121L4.77953 5.30534L5.24161 4.9685L5.70801 5.30534L5.53527 4.76121L5.99735 4.42005H5.41867L5.24161 3.86728ZM2.81462 3.86728L2.62461 4.42005H2.05457L2.51664 4.76121L2.3439 5.30534L2.81462 4.9685L3.27238 5.30534L3.09532 4.76121L3.56604 4.42005H2.98736L2.81462 3.86728ZM7.67292 3.86728L7.50018 4.42005H6.91719L7.39222 4.76121L7.21084 5.30534L7.67292 4.9685L8.14795 5.30534L7.96658 4.76121L8.42866 4.42005H7.85862L7.67292 3.86728ZM10.1129 3.86728L9.93149 4.42005H9.35713L9.82353 4.76121L9.65079 5.30534L10.1129 4.9685L10.5793 5.30534L10.3936 4.76121L10.8686 4.42005H10.2856L10.1129 3.86728ZM2.81462 1.68213L2.62461 2.22626H2.05457L2.51664 2.56742L2.3439 3.11587L2.81462 2.77471L3.27238 3.11587L3.09532 2.56742L3.56604 2.22626H2.98736L2.81462 1.68213ZM5.24161 1.68213L5.06023 2.22626H4.49019L4.95227 2.56742L4.77953 3.11587L5.24161 2.77471L5.70801 3.11587L5.53527 2.56742L5.99735 2.22626H5.41867L5.24161 1.68213ZM7.67292 1.68213L7.50018 2.22626H6.91719L7.39222 2.56742L7.21084 3.11587L7.67292 2.77471L8.14795 3.11587L7.96658 2.56742L8.42866 2.22626H7.85862L7.67292 1.68213ZM10.1129 1.68213L9.93149 2.22626H9.35713L9.82353 2.56742L9.65079 3.11587L10.1129 2.77471L10.5793 3.11587L10.3936 2.56742L10.8686 2.22626H10.2856L10.1129 1.68213Z'
+          }
+          fill={'#fff'}
+        />
+      </g>
+    </svg>
+  );
+};
+
+export default CountryFlagUS;
