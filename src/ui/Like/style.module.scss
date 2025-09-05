@@ -1,0 +1,10 @@
+@use '@/style/common' as common;
+
+.layout {
+  @include common.reset;
+  color: #999;
+
+  &--active {
+    color: var(--icon-like-active, #ff5775);
+  }
+}
