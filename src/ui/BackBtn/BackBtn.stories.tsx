@@ -8,10 +8,18 @@ const meta: Meta<typeof BackBtn> = {
   parameters: {
     layout: 'centered',
   },
-  tags: ['autodocs'],
+  argTypes: {
+    width: {
+      control: 'number',
+    },
+    height: {
+      control: 'number',
+    },
+  },
 };
 
 export default meta;
+
 type Story = StoryObj<typeof BackBtn>;
 
 export const Preview: Story = {};

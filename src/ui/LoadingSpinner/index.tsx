@@ -20,7 +20,7 @@ interface Props extends SVGProps<SVGSVGElement> {
  * @remarks 웹 접근성을 위해 `role` 등의 a11y 관련 props 설정을 권장합니다.
  */
 const LoadingSpinner = (props: Props) => {
-  const { className, spin, width, height, role, ...rest } = props;
+  const { className, spin, width, height, role, 'aria-hidden': ariaHidden, ...rest } = props;
 
   const iconSpin: boolean = spin ?? true;
   const iconWidth: string | number = width || '1.5rem';
@@ -28,31 +28,26 @@ const LoadingSpinner = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'status';
+  const iconAriaHidden = ariaHidden ?? false;
+  const loadingLabel = '로딩 중';
 
   return (
-    <svg
-      xmlns={'http://www.w3.org/2000/svg'}
-      width={iconWidth}
-      height={iconHeight}
-      viewBox={'0 0 24 24'}
-      role={iconRole}
-      className={mergeClassNames(style['layout'], iconSpin && style['spinAnimation'], className)}
-      {...rest}
-    >
-      <circle className={style['layout__background']} cx={12} cy={12} r={10} stroke={'currentColor'} strokeWidth={4} fill={'none'} />
-      <circle
-        className={style['layout__foreground']}
-        cx={12}
-        cy={12}
-        r={10}
-        stroke={'currentColor'}
-        strokeWidth={4}
-        strokeLinecap={'butt'}
-        fill={'none'}
-        strokeDasharray={'47 15'}
-        strokeDashoffset={0}
-      />
-    </svg>
+    <div role={iconRole}>
+      <span className={style.srOnly}>{loadingLabel}</span>
+      <svg
+        className={mergeClassNames(style.layout, iconSpin && style.spinAnimation, className)}
+        width={iconWidth}
+        height={iconHeight}
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox={'0 0 24 24'}
+        aria-hidden={iconAriaHidden}
+        {...rest}
+      >
+        <circle className={style['layout__background']} cx={12} cy={12} r={10} stroke="currentColor" strokeWidth={4} fill="none" />
+        <circle className={style['layout__foreground']} cx={12} cy={12} r={10} stroke="currentColor" strokeWidth={4} strokeLinecap="butt" fill="none" strokeDasharray="47 15" strokeDashoffset={0} />
+      </svg>
+    </div>
   );
 };
 

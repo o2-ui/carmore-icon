@@ -11,12 +11,6 @@ const meta: Meta<typeof LoadingSpinner> = {
   argTypes: {
     spin: {
       control: 'boolean',
-      description: '애니메이션 여부',
-      table: {
-        summary: {
-          defaultValue: true,
-        },
-      },
     },
     width: {
       control: 'number',
@@ -25,7 +19,6 @@ const meta: Meta<typeof LoadingSpinner> = {
       control: 'number',
     },
   },
-  tags: ['autodocs'],
 };
 
 export default meta;

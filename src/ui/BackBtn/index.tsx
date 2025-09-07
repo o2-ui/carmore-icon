@@ -4,11 +4,11 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { mergeClassNames } from '@/util/string-helper';
+import { getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 을 랜더링합니다.
- * @param {SVGProps<SVGSVGElement>} props - SVGProps를 상속받은 props 객체.
+ * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
  * @param {string} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
  * @param {string} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
@@ -22,20 +22,22 @@ const BackBtn = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'button';
-  const iconArialLabel = ariaLabel || '뒤로가기';
+  const titleId = getElementId('COPY_LINK');
+  const titleText = ariaLabel || '뒤로가기';
 
   return (
     <svg
-      className={mergeClassNames(style['layout'], className)}
+      className={mergeClassNames(style.layout, className)}
       width={iconWidth}
       height={iconHeight}
       xmlns={'http://www.w3.org/2000/svg'}
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-label={iconArialLabel}
+      aria-labelledby={titleId}
       {...rest}
     >
+      <title id={titleId}>{titleText}</title>
       <path
         fillRule={'evenodd'}
         clipRule={'evenodd'}
