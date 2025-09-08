@@ -2,9 +2,9 @@
 
 .layout {
   @include common.reset;
-  color: #999;
 
   &--active {
+    @include common.reset;
     color: var(--icon-like-active, #ff5775);
   }
 }
