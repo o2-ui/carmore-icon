@@ -14,7 +14,7 @@ export default defineConfig({
       entryRoot: 'src',
       //생성된 .d.ts 파일들이 어디에 저장될지 지정
       outDir: 'dist',
-      include: ['src/index.ts', 'src/ui/**/*', 'global.d.ts'],
+      include: ['src/index.ts', 'src/CarmoreIcon.tsx', 'src/ui/**/*', 'global.d.ts'],
       // Storybook 파일 제외 (.stories.ts / .stories.tsx)
       exclude: ['**/*.stories.*', '**/*.scss'],
       // 배럴에서 참조한 타입들을 하나의 index.d.ts로 번들링
