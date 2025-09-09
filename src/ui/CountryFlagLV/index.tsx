@@ -2,9 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import style from './style.module.scss';
-
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (라트비아 국기) 을 랜더링합니다.
@@ -19,16 +17,17 @@ const CountryFlagLV = (props: SVGProps<SVGSVGElement>) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('CountryFlagLV');
 
-  const maskId = getElementId('COUNTRY_FLAG_LV_MASK_ID');
+  const maskId = getElementId('CountryFlagLVMask');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('COUNTRY_FLAG_LV');
+  const titleId = getElementId('CountryFlagLVTitle');
   const titleText = ariaLabel || '라트비아';
 
   return (
-    <svg className={mergeClassNames(style.layout, className)} viewBox={'0 0 24 16'} width={iconWidth} height={iconHeight} fill={'none'} role={iconRole} aria-labelledby={titleId} {...rest}>
+    <svg className={mergeClassNames(iconClass, className)} viewBox={'0 0 24 16'} width={iconWidth} height={iconHeight} fill={'none'} role={iconRole} aria-labelledby={titleId} {...rest}>
       <title id={titleId}>{titleText}</title>
 
       <defs>

@@ -2,9 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import style from './style.module.scss';
-
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 const ARROW_DOWN_PATH_D = {
   THIN: 'M12.4949 15.4949C12.2216 15.7683 11.7783 15.7683 11.505 15.4949L5.50498 9.49492C5.23161 9.22156 5.23161 8.77834 5.50498 8.50498C5.77834 8.23161 6.22156 8.23161 6.49493 8.50498L12 14.01L17.505 8.50498C17.7783 8.23161 18.2216 8.23161 18.4949 8.50498C18.7683 8.77834 18.7683 9.22156 18.4949 9.49493L12.4949 15.4949Z',
@@ -30,15 +28,16 @@ const ArrowDown = (props: Props) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('ArrowDown');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ARROW_DOWN');
+  const titleId = getElementId('ArrowDownTitle');
   const titleText = ariaLabel || '아래로';
 
   return (
     <svg
-      className={mergeClassNames(style.layout, className)}
+      className={mergeClassNames(iconClass, className)}
       width={iconWidth}
       height={iconHeight}
       xmlns={'http://www.w3.org/2000/svg'}

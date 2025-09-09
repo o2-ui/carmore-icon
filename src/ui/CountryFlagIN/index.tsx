@@ -2,9 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import style from './style.module.scss';
-
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (인도 국기) 을 랜더링합니다.
@@ -19,18 +17,19 @@ const CountryFlagIN = (props: SVGProps<SVGSVGElement>) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('CountryFlagIN');
 
-  const maskId = getElementId('COUNTRY_FLAG_IN_MASK_ID');
+  const maskId = getElementId('CountryFlagINMask');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('COUNTRY_FLAG_IN');
+  const titleId = getElementId('CountryFlagINTitle');
   const titleText = ariaLabel || '인도';
 
   return (
     <svg
       xmlns={'http://www.w3.org/2000/svg'}
-      className={mergeClassNames(style.layout, className)}
+      className={mergeClassNames(iconClass, className)}
       viewBox={'0 0 24 16'}
       width={iconWidth}
       height={iconHeight}

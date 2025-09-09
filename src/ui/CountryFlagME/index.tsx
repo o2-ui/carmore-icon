@@ -2,9 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import style from './style.module.scss';
-
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (몬테네그로 국기) 을 랜더링합니다.
@@ -19,22 +17,23 @@ const CountryFlagME = (props: SVGProps<SVGSVGElement>) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('CountryFlagME');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('COUNTRY_FLAG_ME');
+  const titleId = getElementId('CountryFlagMETitle');
   const titleText = ariaLabel || '몬테네그로';
 
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={mergeClassNames(style.layout, className)}
-      viewBox="0 0 24 16"
+      xmlns={'http://www.w3.org/2000/svg'}
+      className={mergeClassNames(iconClass, className)}
+      viewBox={'0 0 24 16'}
       width={iconWidth}
       height={iconHeight}
       role={iconRole}
       aria-labelledby={titleId}
-      fill="none"
+      fill={'none'}
       {...rest}
     >
       <title id={titleId}>{titleText}</title>

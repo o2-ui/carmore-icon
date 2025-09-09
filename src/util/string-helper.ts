@@ -5,11 +5,17 @@ const mergeClassNames = (...classes: (string | undefined | false)[]) => {
 };
 
 const getElementId = (original?: string) => {
-  const prefix = 'o2_ui_react_icon';
-  const originalKey = (original || '').toLowerCase();
-  const uniqueKey = CustomCrypto.randomUUID();
+  const prefix = 'o2_ui_carmore_icon';
+  const originalKey = (original || '').toLowerCase().replaceAll('-', '_');
+  const uniqueKey = CustomCrypto.randomUUID().toLowerCase().replaceAll('-', '_');
 
-  return [prefix, originalKey, uniqueKey].filter(Boolean).join('__').toLowerCase().replaceAll('-', '_');
+  return [prefix, originalKey, uniqueKey].filter(Boolean).join('__');
 };
 
-export { mergeClassNames, getElementId };
+const getElementClass = (original?: string) => {
+  const prefix = 'o2-ui-carmore-icon';
+  const originalKey = (original || '').toLowerCase().replace('_', '-');
+  return [prefix, originalKey].join('-');
+};
+
+export { mergeClassNames, getElementId, getElementClass };

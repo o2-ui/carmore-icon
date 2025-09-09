@@ -2,9 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import style from './style.module.scss';
-
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 을 랜더링합니다.
@@ -19,15 +17,16 @@ const Copy = (props: SVGProps<SVGSVGElement>) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('Copy');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('COPY');
+  const titleId = getElementId('CopyTitle');
   const titleText = ariaLabel || '복사하기';
 
   return (
     <svg
-      className={mergeClassNames(style.layout, className)}
+      className={mergeClassNames(iconClass, className)}
       width={iconWidth}
       height={iconHeight}
       xmlns={'http://www.w3.org/2000/svg'}

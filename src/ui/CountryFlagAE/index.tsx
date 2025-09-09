@@ -2,9 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import style from './style.module.scss';
-
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (아랍에미리트 국기) 을 랜더링합니다.
@@ -19,18 +17,19 @@ const CountryFlagAE = (props: SVGProps<SVGSVGElement>) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('CountryFlagAE');
 
-  const maskId = getElementId('COUNTRY_FLAG_AE_MASK_ID');
+  const maskId = getElementId('CountryFlagAEMask');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('COUNTRY_FLAG_AE');
+  const titleId = getElementId('CountryFlagAETitle');
   const titleText = ariaLabel || '아랍에미리트';
 
   return (
     <svg
       xmlns={'http://www.w3.org/2000/svg'}
-      className={mergeClassNames(style.layout, className)}
+      className={mergeClassNames(iconClass, className)}
       viewBox={'0 0 24 16'}
       width={iconWidth}
       height={iconHeight}

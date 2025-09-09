@@ -1,5 +1,3 @@
-@use '@/style/common' as common;
-
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -19,16 +17,12 @@
   white-space: nowrap;
 }
 
-.layout {
-  @include common.reset;
-  cursor: wait;
+.foregroundCircle {
+  stroke: var(--foreground, #f3f3f3);
+}
 
-  &__background {
-    stroke: #f3f3f3;
-  }
-  &__foreground {
-    stroke: #aab4c6;
-  }
+.backgroundCircle {
+  stroke: var(--background, #aab4c6);
 }
 
 .spinAnimation {

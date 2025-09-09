@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 type VariantsType = 'fill' | 'solid' | 'active';
 
@@ -26,15 +26,16 @@ const Like = (props: Props) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('Like');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('LIKE_ICON');
+  const titleId = getElementId('LikeTitle');
   const titleText = ariaLabel || '좋아요';
 
   return (
     <svg
-      className={mergeClassNames(variants === 'active' ? style['layout--active'] : style.layout, className)}
+      className={mergeClassNames(iconClass, variants === 'active' && style.active, className)}
       width={iconWidth}
       height={iconHeight}
       xmlns={'http://www.w3.org/2000/svg'}

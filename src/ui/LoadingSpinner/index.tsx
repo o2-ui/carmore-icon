@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type Props = SVGProps<SVGSVGElement> & {
   spin?: boolean;
@@ -25,6 +25,7 @@ const LoadingSpinner = (props: Props) => {
   const iconSpin: boolean = spin ?? true;
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('LoadingSpinner');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'status';
@@ -35,17 +36,17 @@ const LoadingSpinner = (props: Props) => {
     <div role={iconRole}>
       <span className={style.srOnly}>{loadingLabel}</span>
       <svg
-        className={mergeClassNames(style.layout, iconSpin && style.spinAnimation, className)}
+        className={mergeClassNames(iconClass, iconSpin && style.spinAnimation, className)}
         width={iconWidth}
         height={iconHeight}
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid meet"
+        xmlns={'http://www.w3.org/2000/svg'}
+        preserveAspectRatio={'xMidYMid meet'}
         viewBox={'0 0 24 24'}
         aria-hidden={iconAriaHidden}
         {...rest}
       >
-        <circle className={style['layout__background']} cx={12} cy={12} r={10} stroke="currentColor" strokeWidth={4} fill="none" />
-        <circle className={style['layout__foreground']} cx={12} cy={12} r={10} stroke="currentColor" strokeWidth={4} strokeLinecap="butt" fill="none" strokeDasharray="47 15" strokeDashoffset={0} />
+        <circle className={style.foregroundCircle} cx={12} cy={12} r={10} stroke={'currentColor'} strokeWidth={4} fill={'none'} />
+        <circle className={style.backgroundCircle} cx={12} cy={12} r={10} stroke={'currentColor'} strokeWidth={4} strokeLinecap={'butt'} fill={'none'} strokeDasharray={'47 15'} strokeDashoffset={0} />
       </svg>
     </div>
   );

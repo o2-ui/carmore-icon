@@ -2,9 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import style from './style.module.scss';
-
-import { getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (알바니아 국기) 을 랜더링합니다.
@@ -19,17 +17,18 @@ const CountryFlagAL = (props: SVGProps<SVGSVGElement>) => {
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
+  const iconClass = getElementClass('CountryFlagAL');
 
-  const clipId = getElementId('COUNTRY_FLAG_AL_CLIP_ID');
+  const maskId = getElementId('CountryFlagALMask');
 
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('COUNTRY_FLAG_AL');
+  const titleId = getElementId('CountryFlagALTitle');
   const titleText = ariaLabel || '알바니아';
 
   return (
     <svg
       xmlns={'http://www.w3.org/2000/svg'}
-      className={mergeClassNames(style.layout, className)}
+      className={mergeClassNames(iconClass, className)}
       viewBox={'0 0 24 16'}
       width={iconWidth}
       height={iconHeight}
@@ -39,7 +38,10 @@ const CountryFlagAL = (props: SVGProps<SVGSVGElement>) => {
       {...rest}
     >
       <title id={titleId}>{titleText}</title>
-      <g clipPath={`url(#${clipId})`}>
+      <mask id={maskId} maskUnits={'userSpaceOnUse'} x={'0'} y={'0'} width={'24'} height={'16'}>
+        <rect x={0.923} y={0.615} width={22.154} height={14.769} rx={2} fill={'white'} />
+      </mask>
+      <g mask={`url(#${maskId})`}>
         <path d={'M0.923096 0.615234H23.0769V15.3845H0.923096V0.615234Z'} fill={'#ED2024'} />
         <path
           d={
@@ -61,11 +63,6 @@ const CountryFlagAL = (props: SVGProps<SVGSVGElement>) => {
         />
         <path d={'M14.0677 9.50146H15.6431V9.96916H14.0677V9.50146ZM8.35693 9.50146H9.93232V9.96916H8.35693V9.50146Z'} fill={'#212121'} />
       </g>
-      <defs>
-        <clipPath id={clipId}>
-          <rect x={0.923096} y={0.615234} width={22.1538} height={14.7692} rx={2} fill={'white'} />
-        </clipPath>
-      </defs>
     </svg>
   );
 };
