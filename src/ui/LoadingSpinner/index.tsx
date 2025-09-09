@@ -6,9 +6,9 @@ import style from './style.module.scss';
 
 import { mergeClassNames } from '@/util/string-helper';
 
-interface Props extends SVGProps<SVGSVGElement> {
+type Props = SVGProps<SVGSVGElement> & {
   spin?: boolean;
-}
+};
 
 /**
  * @description SVG 아이콘 을 랜더링합니다.

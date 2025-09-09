@@ -8,9 +8,9 @@ import { getElementId, mergeClassNames } from '@/util/string-helper';
 
 type VariantsType = 'fill' | 'solid' | 'active';
 
-interface Props extends SVGProps<SVGSVGElement> {
+type Props = SVGProps<SVGSVGElement> & {
   variants: VariantsType;
-}
+};
 
 /**
  * @description SVG 아이콘 (좋아요) 을 랜더링합니다.
