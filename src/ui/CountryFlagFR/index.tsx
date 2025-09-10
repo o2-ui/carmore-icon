@@ -27,7 +27,17 @@ const CountryFlagFR = (props: SVGProps<SVGSVGElement>) => {
   const titleText = ariaLabel || '프랑스';
 
   return (
-    <svg xmlns={'http://www.w3.org/2000/svg'} className={mergeClassNames(iconClass, className)} width={iconWidth} height={iconHeight} fill={'none'} role={iconRole} aria-labelledby={titleId} {...rest}>
+    <svg
+      xmlns={'http://www.w3.org/2000/svg'}
+      className={mergeClassNames(iconClass, className)}
+      width={iconWidth}
+      height={iconHeight}
+      viewBox={'0 0 24 16'}
+      fill={'none'}
+      role={iconRole}
+      aria-labelledby={titleId}
+      {...rest}
+    >
       <title id={titleId}>{titleText}</title>
       <mask id={maskId} maskUnits={'userSpaceOnUse'} x={'0'} y={'0'} width={'24'} height={'16'}>
         <rect x={0.923096} y={0.615234} width={22.1538} height={14.7692} rx={2} fill={'white'} />
