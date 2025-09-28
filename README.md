@@ -1,7 +1,7 @@
 # @o2-ui/camore-icon
 
-[![GitHub](https://img.shields.io/badge/GitHub-o2--ui%2Freact--icon-blue)](https://github.com/o2-ui/carmore-icon)
-[![Chromatic](https://img.shields.io/badge/Chromatic-Storybook-pink)](https://www.chromatic.com/setup?appId=68a54b35549b57acb90d7795)
+[![o2-ui](https://img.shields.io/badge/@o2--ui-carmore--icon-blue)](https://o2-ui.github.io/docs/carmore-icon/overview)
+[![github](https://img.shields.io/badge/github-o2--ui%2Fcarmore--icon-8C31AA)](https://github.com/o2-ui/carmore-icon)
 
 ## 🌐 Overview | 개요
 
@@ -45,8 +45,3 @@ This project is licensed under Creative Commons Attribution-NoDerivatives 4.0 In
 공식 라이선스 전문은 [링크](https://github.com/o2-ui/carmore-icon/blob/main/LICENSE) 에서 확인할 수 있습니다.
 
 ---
-
-📌 Status | 현재 상태
-
-> Preview Release – This package is under active development.
-> API and components may change before the official stable release.
