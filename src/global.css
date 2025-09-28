@@ -1,0 +1,18 @@
+:root {
+  --carmore-icon-default-color: #999;
+
+  --carmore-icon-like-active: #ff5775;
+
+  --carmore-icon-loading-spinner-background: #aab4c6;
+  --carmore-icon-loading-spinner-foreground: #f3f3f3;
+}
+
+[class^='o2-ui-carmore-icon-'] {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: var(--carmore-icon-default-color);
+}

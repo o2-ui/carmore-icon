@@ -18,11 +18,11 @@
 }
 
 .foregroundCircle {
-  stroke: var(--carmore-icon-loading-spinner-foreground, #f3f3f3);
+  stroke: var(--carmore-icon-loading-spinner-foreground);
 }
 
 .backgroundCircle {
-  stroke: var(--carmore-icon-loading-spinner-background, #aab4c6);
+  stroke: var(--carmore-icon-loading-spinner-background);
 }
 
 .spinAnimation {

@@ -2,6 +2,7 @@ import type { ComponentProps, ComponentType } from 'react';
 
 import React from 'react';
 
+import './global.css';
 import ArrowDoubleDown from './ui/ArrowDoubleDown';
 import ArrowDoubleUp from './ui/ArrowDoubleUp';
 import ArrowDown from './ui/ArrowDown';
