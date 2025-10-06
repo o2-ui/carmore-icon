@@ -5,35 +5,35 @@ import React from 'react';
 import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
- * @description SVG 아이콘 을 랜더링합니다.
+ * @description SVG 아이콘 (HotelETC) 을 랜더링합니다.
  * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
- * @param {string} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
- * @param {string} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
+ * @param {string|number} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
+ * @param {string|number} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
  * @remarks 웹 접근성을 위해 `role`, `aria-label` 등의 a11y 관련 props 설정을 권장합니다.
  */
-const Reply = (props: SVGProps<SVGSVGElement>) => {
+const HotelETC = (props: SVGProps<SVGSVGElement>) => {
   const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
-  const iconClass = getElementClass('Reply');
+  const iconClass = getElementClass('HotelETC');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ReplyTitle');
-  const titleText = ariaLabel || '응답하기';
+  const titleId = getElementId('HotelETCTitle');
+  const titleText = ariaLabel || '확인사항';
 
   return (
     <svg
       className={mergeClassNames(iconClass, className)}
       width={iconWidth}
       height={iconHeight}
-      xmlns={'http://www.w3.org/2000/svg'}
-      preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
+      xmlns={'http://www.w3.org/2000/svg'}
       role={iconRole}
       aria-labelledby={titleId}
+      fill={'none'}
       {...rest}
     >
       <title id={titleId}>{titleText}</title>
@@ -41,12 +41,13 @@ const Reply = (props: SVGProps<SVGSVGElement>) => {
         fillRule={'evenodd'}
         clipRule={'evenodd'}
         d={
-          'M19.2 6.28396L4.8 6.28396V15.903H15.2672C16.1392 15.903 16.9815 16.2167 17.6378 16.7858L19.2 18.1406V6.28396ZM19.2 4.5C20.1941 4.5 21 5.29871 21 6.28396V20.1063C21 20.8726 20.0893 21.2822 19.5073 20.7776L16.4525 18.1284C16.1243 17.8438 15.7032 17.687 15.2672 17.687H4.8C3.80589 17.687 3 16.8883 3 15.903V6.28396C3 5.2987 3.80589 4.5 4.8 4.5H19.2Z'
+          'M12 1C5.92913 1 1 5.92913 1 12C1 18.0709 5.92913 23 12 23C18.0709 23 23 18.0709 23 12C23 5.92913 18.0709 1 12 1ZM12 2.69231C17.1367 2.69231 21.3077 6.86328 21.3077 12C21.3077 17.1367 17.1367 21.3077 12 21.3077C6.86328 21.3077 2.69231 17.1367 2.69231 12C2.69231 6.86328 6.86328 2.69231 12 2.69231Z'
         }
         fill={'currentColor'}
       />
+      <path d={'M7.5 12.6538L9.59716 14.4015C9.97402 14.7155 10.5307 14.6799 10.8645 14.3205L16.2692 8.5'} stroke={'currentColor'} strokeWidth={1.66154} strokeLinecap={'round'} />
     </svg>
   );
 };
 
-export default Reply;
+export default HotelETC;

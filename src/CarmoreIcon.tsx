@@ -6,11 +6,17 @@ import './global.css';
 import ArrowDoubleDown from './ui/ArrowDoubleDown';
 import ArrowDoubleUp from './ui/ArrowDoubleUp';
 import ArrowDown from './ui/ArrowDown';
+import ArrowDownKTX from './ui/ArrowDownKTX';
+import ArrowLeft from './ui/ArrowLeft';
+import ArrowRight from './ui/ArrowRight';
 import ArrowUp from './ui/ArrowUp';
+import ArrowUpKTX from './ui/ArrowUpKTX';
 import BackBtn from './ui/BackBtn';
+import Call from './ui/Call';
 import Cancel from './ui/Cancel';
 import Chat from './ui/Chat';
 import Check from './ui/Check';
+import Close from './ui/Close';
 import Copy from './ui/Copy';
 import CopyLink from './ui/CopyLink';
 import CountryFlagAE from './ui/CountryFlagAE';
@@ -86,31 +92,63 @@ import CountryFlagVN from './ui/CountryFlagVN';
 import CountryFlagZA from './ui/CountryFlagZA';
 import CS from './ui/CS';
 import Download from './ui/Download';
+import Edit from './ui/Edit';
+import Filter from './ui/Filter';
+import Global from './ui/Global';
+import HotelActivity from './ui/HotelActivity';
+import HotelBusiness from './ui/HotelBusiness';
+import HotelCreditCard from './ui/HotelCreditCard';
+import HotelDining from './ui/HotelDining';
+import HotelETC from './ui/HotelETC';
+import HotelFacilities from './ui/HotelFacilities';
+import HotelFitness from './ui/HotelFitness';
+import HotelKids from './ui/HotelKids';
+import HotelParking from './ui/HotelParking';
+import HotelRoom from './ui/HotelRoom';
+import HotelService from './ui/HotelService';
+import HotelValet from './ui/HotelValet';
+import HotelWifi from './ui/HotelWifi';
+import InputDelete from './ui/InputDelete';
+import Jeju from './ui/Jeju';
 import Like from './ui/Like';
+import List from './ui/List';
+import ListDot from './ui/ListDot';
+import ListInactive from './ui/ListInactive';
 import LoadingSpinner from './ui/LoadingSpinner';
+import Month from './ui/Month';
 import Nowhere from './ui/Nowhere';
+import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
 import PinMap from './ui/PinMap';
 import Refresh from './ui/Refresh';
 import Reply from './ui/Reply';
+import RoundTrip from './ui/RoundTrip';
 import Search from './ui/Search';
 import Setting from './ui/Setting';
 import Share from './ui/Share';
+import StarSingle from './ui/StarSingle';
 import StepperMinus from './ui/StepperMinus';
 import StepperPlus from './ui/StepperPlus';
 import SwitchArrow from './ui/SwitchArrow';
 import ThumbUp from './ui/ThumbUp';
+import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
 
 const ICON_MAP = {
   'arrow-double-down': ArrowDoubleDown,
   'arrow-double-up': ArrowDoubleUp,
   'arrow-down': ArrowDown,
+  'arrow-down-ktx': ArrowDownKTX,
+  'arrow-left': ArrowLeft,
+  'arrow-right': ArrowRight,
   'arrow-up': ArrowUp,
+  'arrow-up-ktx': ArrowUpKTX,
   'back-btn': BackBtn,
+  call: Call,
   cancel: Cancel,
   chat: Chat,
   check: Check,
+  close: Close,
   copy: Copy,
   'copy-link': CopyLink,
   'country-flag-ae': CountryFlagAE,
@@ -186,20 +224,46 @@ const ICON_MAP = {
   'country-flag-za': CountryFlagZA,
   cs: CS,
   download: Download,
+  edit: Edit,
+  filter: Filter,
+  global: Global,
+  'hotel-activity': HotelActivity,
+  'hotel-business': HotelBusiness,
+  'hotel-credit-card': HotelCreditCard,
+  'hotel-dining': HotelDining,
+  'hotel-etc': HotelETC,
+  'hotel-facilities': HotelFacilities,
+  'hotel-fitness': HotelFitness,
+  'hotel-kids': HotelKids,
+  'hotel-parking': HotelParking,
+  'hotel-room': HotelRoom,
+  'hotel-service': HotelService,
+  'hotel-valet': HotelValet,
+  'hotel-wifi': HotelWifi,
+  'input-delete': InputDelete,
+  jeju: Jeju,
   like: Like,
+  list: List,
+  'list-dot': ListDot,
+  'list-inactive': ListInactive,
   'loading-spinner': LoadingSpinner,
+  month: Month,
   nowhere: Nowhere,
+  'one-way': Oneway,
   'out-link': OutLink,
   'pin-map': PinMap,
   refresh: Refresh,
   reply: Reply,
+  'round-trip': RoundTrip,
   search: Search,
   setting: Setting,
   share: Share,
+  'star-single': StarSingle,
   'stepper-minus': StepperMinus,
   'stepper-plus': StepperPlus,
   'switch-arrow': SwitchArrow,
   'thumb-up': ThumbUp,
+  ulleongdo: Ulleongdo,
   user: User,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 } satisfies Record<string, ComponentType<any>>;

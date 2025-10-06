@@ -5,24 +5,22 @@ import React from 'react';
 import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
- * @description SVG 아이콘 을 랜더링합니다.
+ * @description SVG 아이콘 ('목록') 을 랜더링합니다. (비활성)
  * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
  * @param {string} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
  * @param {string} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
- * @remarks 웹 접근성을 위해 `role`, `aria-label` 등의 a11y 관련 props 설정을 권장합니다.
  */
-const Reply = (props: SVGProps<SVGSVGElement>) => {
+const ListInactive = (props: SVGProps<SVGSVGElement>) => {
   const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
-  const iconClass = getElementClass('Reply');
+  const iconClass = getElementClass('ListInactive');
 
-  /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ReplyTitle');
-  const titleText = ariaLabel || '응답하기';
+  const titleId = getElementId('ListInactiveTitle');
+  const titleText = ariaLabel || '목록';
 
   return (
     <svg
@@ -38,10 +36,8 @@ const Reply = (props: SVGProps<SVGSVGElement>) => {
     >
       <title id={titleId}>{titleText}</title>
       <path
-        fillRule={'evenodd'}
-        clipRule={'evenodd'}
         d={
-          'M19.2 6.28396L4.8 6.28396V15.903H15.2672C16.1392 15.903 16.9815 16.2167 17.6378 16.7858L19.2 18.1406V6.28396ZM19.2 4.5C20.1941 4.5 21 5.29871 21 6.28396V20.1063C21 20.8726 20.0893 21.2822 19.5073 20.7776L16.4525 18.1284C16.1243 17.8438 15.7032 17.687 15.2672 17.687H4.8C3.80589 17.687 3 16.8883 3 15.903V6.28396C3 5.2987 3.80589 4.5 4.8 4.5H19.2Z'
+          'M19.5996 17.7002C20.0965 17.7002 20.4998 18.1027 20.5 18.5996C20.5 19.0967 20.0967 19.5 19.5996 19.5H4.40039C3.90333 19.5 3.5 19.0967 3.5 18.5996C3.50021 18.1027 3.90346 17.7002 4.40039 17.7002H19.5996ZM14.5996 11.0996C15.0967 11.0996 15.5 11.5029 15.5 12C15.5 12.4971 15.0967 12.9004 14.5996 12.9004H4.40039C3.90333 12.9004 3.5 12.4971 3.5 12C3.5 11.5029 3.90333 11.0996 4.40039 11.0996H14.5996ZM19.5996 4.5C20.0967 4.5 20.5 4.90333 20.5 5.40039C20.4998 5.89727 20.0965 6.2998 19.5996 6.2998H4.40039C3.90346 6.2998 3.50021 5.89727 3.5 5.40039C3.5 4.90333 3.90333 4.5 4.40039 4.5H19.5996Z'
         }
         fill={'currentColor'}
       />
@@ -49,4 +45,4 @@ const Reply = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default Reply;
+export default ListInactive;
