@@ -137,6 +137,7 @@ import Station from './ui/Station';
 import Status from './ui/Status';
 import StepperMinus from './ui/StepperMinus';
 import StepperPlus from './ui/StepperPlus';
+import Success from './ui/Success';
 import SwitchArrow from './ui/SwitchArrow';
 import ThumbUp from './ui/ThumbUp';
 import Ulleongdo from './ui/Ulleongdo';
@@ -148,6 +149,7 @@ const ICON_MAP = {
   // 1.3.0
   checklist: Checklist,
   status: Status,
+  success: Success,
 
   // 1.2.0
   airport: Airport,
