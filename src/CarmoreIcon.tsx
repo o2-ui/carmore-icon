@@ -3,6 +3,8 @@ import type { ComponentProps, ComponentType } from 'react';
 import React from 'react';
 
 import './global.css';
+import Airport from './ui/Airport';
+import Anchor from './ui/Anchor';
 import ArrowDoubleDown from './ui/ArrowDoubleDown';
 import ArrowDoubleUp from './ui/ArrowDoubleUp';
 import ArrowDown from './ui/ArrowDown';
@@ -12,8 +14,10 @@ import ArrowRight from './ui/ArrowRight';
 import ArrowUp from './ui/ArrowUp';
 import ArrowUpKTX from './ui/ArrowUpKTX';
 import BackBtn from './ui/BackBtn';
+import Bus from './ui/Bus';
 import Call from './ui/Call';
 import Cancel from './ui/Cancel';
+import Car from './ui/Car';
 import Chat from './ui/Chat';
 import Check from './ui/Check';
 import Close from './ui/Close';
@@ -121,20 +125,35 @@ import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
 import PinMap from './ui/PinMap';
 import Refresh from './ui/Refresh';
+import RentalHouse from './ui/RentalHouse';
 import Reply from './ui/Reply';
 import RoundTrip from './ui/RoundTrip';
 import Search from './ui/Search';
 import Setting from './ui/Setting';
 import Share from './ui/Share';
 import StarSingle from './ui/StarSingle';
+import Station from './ui/Station';
 import StepperMinus from './ui/StepperMinus';
 import StepperPlus from './ui/StepperPlus';
 import SwitchArrow from './ui/SwitchArrow';
 import ThumbUp from './ui/ThumbUp';
 import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
+import Walk from './ui/Walk';
+import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
+  // 1.2.0
+  airport: Airport,
+  anchor: Anchor,
+  bus: Bus,
+  car: Car,
+  'rental-house': RentalHouse,
+  station: Station,
+  walk: Walk,
+  'with-car': WithCar,
+
+  // 1.0.0 ~ 1.1.0
   'arrow-double-down': ArrowDoubleDown,
   'arrow-double-up': ArrowDoubleUp,
   'arrow-down': ArrowDown,
