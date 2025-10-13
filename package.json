@@ -4,7 +4,7 @@
     "name": "Jeff Lee",
     "email": "jeff@teamo2.kr"
   },
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "exports": {
     ".": {
