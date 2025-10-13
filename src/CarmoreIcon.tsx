@@ -20,6 +20,7 @@ import Cancel from './ui/Cancel';
 import Car from './ui/Car';
 import Chat from './ui/Chat';
 import Check from './ui/Check';
+import Checklist from './ui/Checklist';
 import Close from './ui/Close';
 import Copy from './ui/Copy';
 import CopyLink from './ui/CopyLink';
@@ -143,6 +144,9 @@ import Walk from './ui/Walk';
 import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
+  // 1.3.0
+  checklist: Checklist,
+
   // 1.2.0
   airport: Airport,
   anchor: Anchor,
