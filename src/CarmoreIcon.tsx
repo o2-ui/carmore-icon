@@ -134,6 +134,7 @@ import Setting from './ui/Setting';
 import Share from './ui/Share';
 import StarSingle from './ui/StarSingle';
 import Station from './ui/Station';
+import Status from './ui/Status';
 import StepperMinus from './ui/StepperMinus';
 import StepperPlus from './ui/StepperPlus';
 import SwitchArrow from './ui/SwitchArrow';
@@ -146,6 +147,7 @@ import WithCar from './ui/WithCar';
 const ICON_MAP = {
   // 1.3.0
   checklist: Checklist,
+  status: Status,
 
   // 1.2.0
   airport: Airport,
