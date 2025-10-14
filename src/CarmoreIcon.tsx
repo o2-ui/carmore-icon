@@ -148,6 +148,7 @@ import Time from './ui/Time';
 import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
 import Walk from './ui/Walk';
+import Warning from './ui/Warning';
 import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
@@ -160,6 +161,7 @@ const ICON_MAP = {
   status: Status,
   success: Success,
   time: Time,
+  Warning: Warning,
 
   // 1.2.0
   airport: Airport,
