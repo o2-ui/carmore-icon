@@ -96,6 +96,7 @@ import CountryFlagUS from './ui/CountryFlagUS';
 import CountryFlagVN from './ui/CountryFlagVN';
 import CountryFlagZA from './ui/CountryFlagZA';
 import CS from './ui/CS';
+import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
 import Filter from './ui/Filter';
@@ -149,6 +150,7 @@ import WithCar from './ui/WithCar';
 const ICON_MAP = {
   // 1.3.0
   checklist: Checklist,
+  'direction-up': DirectionUp,
   status: Status,
   success: Success,
   time: Time,
