@@ -124,6 +124,7 @@ import ListDot from './ui/ListDot';
 import ListInactive from './ui/ListInactive';
 import LoadingSpinner from './ui/LoadingSpinner';
 import Month from './ui/Month';
+import MoreInfo from './ui/MoreInfo';
 import Nowhere from './ui/Nowhere';
 import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
@@ -155,6 +156,7 @@ const ICON_MAP = {
   'direction-up': DirectionUp,
   'error-info': ErrorInfo,
   help: Help,
+  'more-info': MoreInfo,
   status: Status,
   success: Success,
   time: Time,
