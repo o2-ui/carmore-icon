@@ -140,6 +140,7 @@ import StepperPlus from './ui/StepperPlus';
 import Success from './ui/Success';
 import SwitchArrow from './ui/SwitchArrow';
 import ThumbUp from './ui/ThumbUp';
+import Time from './ui/Time';
 import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
 import Walk from './ui/Walk';
@@ -150,6 +151,7 @@ const ICON_MAP = {
   checklist: Checklist,
   status: Status,
   success: Success,
+  time: Time,
 
   // 1.2.0
   airport: Airport,
