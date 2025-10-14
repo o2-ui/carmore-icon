@@ -100,6 +100,7 @@ import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
 import ErrorInfo from './ui/ErrorInfo';
+import EV from './ui/EV';
 import Filter from './ui/Filter';
 import Global from './ui/Global';
 import Help from './ui/Help';
@@ -157,6 +158,7 @@ const ICON_MAP = {
   checklist: Checklist,
   'direction-up': DirectionUp,
   'error-info': ErrorInfo,
+  ev: EV,
   help: Help,
   'more-info': MoreInfo,
   'new-car': NewCar,
