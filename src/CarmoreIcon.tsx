@@ -132,6 +132,7 @@ import Nowhere from './ui/Nowhere';
 import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
 import PinMap from './ui/PinMap';
+import Point from './ui/Point';
 import Refresh from './ui/Refresh';
 import RentalHouse from './ui/RentalHouse';
 import Reply from './ui/Reply';
@@ -164,6 +165,7 @@ const ICON_MAP = {
   'method-credit-card': MethodCreditCard,
   'more-info': MoreInfo,
   'new-car': NewCar,
+  point: Point,
   status: Status,
   success: Success,
   time: Time,
