@@ -5,7 +5,7 @@ import React from 'react';
 import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
- * @description SVG 아이콘 ('전세계') 을 랜더링합니다.
+ * @description SVG 아이콘 ('글로벌') 을 랜더링합니다.
  * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
  * @param {string} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
@@ -22,7 +22,7 @@ const Global = (props: SVGProps<SVGSVGElement>) => {
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
   const titleId = getElementId('GlobalTitle');
-  const titleText = ariaLabel || '전세계';
+  const titleText = ariaLabel || '글로벌';
 
   return (
     <svg
