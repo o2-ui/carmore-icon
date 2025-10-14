@@ -102,6 +102,7 @@ import Edit from './ui/Edit';
 import ErrorInfo from './ui/ErrorInfo';
 import Filter from './ui/Filter';
 import Global from './ui/Global';
+import Help from './ui/Help';
 import HotelActivity from './ui/HotelActivity';
 import HotelBusiness from './ui/HotelBusiness';
 import HotelCreditCard from './ui/HotelCreditCard';
@@ -153,6 +154,7 @@ const ICON_MAP = {
   checklist: Checklist,
   'direction-up': DirectionUp,
   'error-info': ErrorInfo,
+  help: Help,
   status: Status,
   success: Success,
   time: Time,
