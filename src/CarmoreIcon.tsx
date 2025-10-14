@@ -124,6 +124,7 @@ import List from './ui/List';
 import ListDot from './ui/ListDot';
 import ListInactive from './ui/ListInactive';
 import LoadingSpinner from './ui/LoadingSpinner';
+import MethodCreditCard from './ui/MethodCreditCard';
 import Month from './ui/Month';
 import MoreInfo from './ui/MoreInfo';
 import NewCar from './ui/NewCar';
@@ -160,6 +161,7 @@ const ICON_MAP = {
   'error-info': ErrorInfo,
   ev: EV,
   help: Help,
+  'method-credit-card': MethodCreditCard,
   'more-info': MoreInfo,
   'new-car': NewCar,
   status: Status,
