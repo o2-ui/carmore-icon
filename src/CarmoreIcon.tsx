@@ -99,6 +99,7 @@ import CS from './ui/CS';
 import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
+import ErrorInfo from './ui/ErrorInfo';
 import Filter from './ui/Filter';
 import Global from './ui/Global';
 import HotelActivity from './ui/HotelActivity';
@@ -151,6 +152,7 @@ const ICON_MAP = {
   // 1.3.0
   checklist: Checklist,
   'direction-up': DirectionUp,
+  'error-info': ErrorInfo,
   status: Status,
   success: Success,
   time: Time,
