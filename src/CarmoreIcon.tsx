@@ -101,6 +101,7 @@ import Download from './ui/Download';
 import Edit from './ui/Edit';
 import ErrorInfo from './ui/ErrorInfo';
 import EV from './ui/EV';
+import FavHome from './ui/FavHome';
 import Filter from './ui/Filter';
 import Global from './ui/Global';
 import Help from './ui/Help';
@@ -161,6 +162,7 @@ const ICON_MAP = {
   'direction-up': DirectionUp,
   'error-info': ErrorInfo,
   ev: EV,
+  'fav-home': FavHome,
   help: Help,
   'method-credit-card': MethodCreditCard,
   'more-info': MoreInfo,
