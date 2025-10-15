@@ -149,6 +149,11 @@ import StepperMinus from './ui/StepperMinus';
 import StepperPlus from './ui/StepperPlus';
 import Success from './ui/Success';
 import SwitchArrow from './ui/SwitchArrow';
+import TabAlert from './ui/TabAlert';
+import TabDay from './ui/TabDay';
+import TabHome from './ui/TabHome';
+import TabHotel from './ui/TabHotel';
+import TabMypage from './ui/TabMypage';
 import ThumbUp from './ui/ThumbUp';
 import Time from './ui/Time';
 import Ulleongdo from './ui/Ulleongdo';
@@ -172,6 +177,11 @@ const ICON_MAP = {
   point: Point,
   status: Status,
   success: Success,
+  'tab-alert': TabAlert,
+  'tab-day': TabDay,
+  'tab-home': TabHome,
+  'tab-hotel': TabHotel,
+  'tab-mypage': TabMypage,
   time: Time,
   warning: Warning,
 
