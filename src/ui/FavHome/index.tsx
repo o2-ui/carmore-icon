@@ -50,7 +50,7 @@ const FavHome = (props: Props) => {
     >
       <title id={titleId}>{titleText}</title>
 
-      {state === 'default' && (
+      {!isActive && (
         <path
           fillRule={'evenodd'}
           clipRule={'evenodd'}
@@ -60,7 +60,7 @@ const FavHome = (props: Props) => {
           fill={'currentColor'}
         />
       )}
-      {state === 'active' && (
+      {isActive && (
         <path
           fillRule={'evenodd'}
           clipRule={'evenodd'}
