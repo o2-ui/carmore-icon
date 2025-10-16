@@ -9,7 +9,7 @@ import { getElementClass, getElementId, mergeClassNames } from '@/util/string-he
 type VariantsType = 'fill' | 'solid' | 'active';
 
 type Props = SVGProps<SVGSVGElement> & {
-  variants: VariantsType;
+  variants?: VariantsType;
 };
 
 /**

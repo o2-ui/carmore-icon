@@ -9,7 +9,7 @@ import { getElementClass, getElementId, mergeClassNames } from '@/util/string-he
 type StateType = 'default' | 'active';
 
 type Props = SVGProps<SVGSVGElement> & {
-  state: StateType;
+  state?: StateType;
 };
 
 /**
