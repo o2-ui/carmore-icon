@@ -10,7 +10,7 @@ const meta: Meta<typeof Like> = {
   },
   argTypes: {
     variants: {
-      control: 'select',
+      control: 'radio',
       options: ['fill', 'solid', 'active'],
     },
     width: {

@@ -16,7 +16,7 @@ const meta: Meta<typeof Pet> = {
       control: 'number',
     },
     state: {
-      control: 'select',
+      control: 'radio',
       options: ['on', 'off'],
     },
   },

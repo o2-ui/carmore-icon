@@ -16,7 +16,7 @@ const meta: Meta<typeof TabDay> = {
       control: 'number',
     },
     state: {
-      control: 'select',
+      control: 'radio',
       options: ['default', 'active'],
     },
   },
