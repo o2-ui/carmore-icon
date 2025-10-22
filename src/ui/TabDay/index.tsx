@@ -13,7 +13,7 @@ type Props = SVGProps<SVGSVGElement> & {
 };
 
 /**
- * @description SVG 아이콘 ('렌트카') 을 랜더링합니다.
+ * @description SVG 아이콘 ('렌트카 탭') 을 랜더링합니다.
  * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
  * @param {StateType} [props.state = 'default'] - 아이콘 강조효과 활성여부. (기본값: 'default')
@@ -34,7 +34,7 @@ const TabDay = (props: Props) => {
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
   const titleId = getElementId('TabDayTitle');
-  const titleText = ariaLabel || '렌트카';
+  const titleText = ariaLabel || '렌트카 탭';
 
   return (
     <svg
