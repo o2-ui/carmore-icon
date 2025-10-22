@@ -1,0 +1,8 @@
+.layout {
+  &--default {
+    color: var(--carmore-icon-inactive-color);
+  }
+  &--active {
+    color: var(--carmore-icon-primary-color);
+  }
+}

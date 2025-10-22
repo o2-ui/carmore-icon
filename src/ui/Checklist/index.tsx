@@ -5,24 +5,23 @@ import React from 'react';
 import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
- * @description SVG 아이콘 을 랜더링합니다.
+ * @description SVG 아이콘 ('확인사항') 을 랜더링합니다.
  * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
  * @param {string} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
  * @param {string} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
- * @remarks 웹 접근성을 위해 `role`, `aria-label` 등의 a11y 관련 props 설정을 권장합니다.
  */
-const Refresh = (props: SVGProps<SVGSVGElement>) => {
+const Checklist = (props: SVGProps<SVGSVGElement>) => {
   const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
-  const iconClass = getElementClass('Refresh');
+  const iconClass = getElementClass('Checklist');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('RefreshTitle');
-  const titleText = ariaLabel || '새로고침';
+  const titleId = getElementId('ChecklistTitle');
+  const titleText = ariaLabel || '확인사항';
 
   return (
     <svg
@@ -41,7 +40,7 @@ const Refresh = (props: SVGProps<SVGSVGElement>) => {
         fillRule={'evenodd'}
         clipRule={'evenodd'}
         d={
-          'M5.39998 3.9C5.39998 3.40294 4.99703 3 4.49998 3C4.00292 3 3.59998 3.40294 3.59998 3.9V8.9C3.59998 9.39706 4.00292 9.8 4.49998 9.8H9.49998C9.99703 9.8 10.4 9.39706 10.4 8.9C10.4 8.40294 9.99703 8 9.49998 8H6.63441C6.70257 7.92143 6.77243 7.84436 6.84394 7.76886C8.13914 6.40124 9.96941 5.55 12 5.55C15.9212 5.55 19.1 8.72878 19.1 12.65C19.1 16.5712 15.9212 19.75 12 19.75C8.07875 19.75 4.89998 16.5712 4.89998 12.65C4.89998 12.1529 4.49703 11.75 3.99998 11.75C3.50292 11.75 3.09998 12.1529 3.09998 12.65C3.09998 17.5653 7.08464 21.55 12 21.55C16.9153 21.55 20.9 17.5653 20.9 12.65C20.9 7.73466 16.9153 3.75 12 3.75C9.45481 3.75 7.15799 4.81953 5.53701 6.53114C5.49078 6.57995 5.4451 6.62929 5.39998 6.67915V3.9Z'
+          'M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12ZM16.4637 9.33654C16.8121 9.68526 16.8121 10.2506 16.4637 10.5994L11.9636 15.1056L11.9558 15.1135C11.6952 15.3743 11.3135 15.44 10.9918 15.3106C10.8835 15.267 10.782 15.2013 10.6942 15.1134L10.6891 15.1083L7.98628 12.3994C7.63791 12.0507 7.63791 11.4853 7.98628 11.1366C8.33466 10.7878 8.8995 10.7878 9.24787 11.1366L11.325 13.2192L15.2021 9.33654C15.5505 8.98782 16.1153 8.98782 16.4637 9.33654Z'
         }
         fill={'currentColor'}
       />
@@ -49,4 +48,4 @@ const Refresh = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default Refresh;
+export default Checklist;

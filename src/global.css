@@ -1,5 +1,7 @@
 :root {
-  --carmore-icon-default-color: #999;
+  --carmore-icon-primary-color: #0d6ffc;
+  --carmore-icon-default-color: #999999;
+  --carmore-icon-inactive-color: #d4d4d4;
 
   --carmore-icon-like-active: #ff5775;
 

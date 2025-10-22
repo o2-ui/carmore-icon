@@ -1,0 +1,12 @@
+.layout {
+  &--on {
+    color: var(--carmore-icon-primary-color);
+  }
+  &--off {
+    color: var(--carmore-icon-default-color);
+  }
+}
+
+.forbidden {
+  stroke: var(--carmore-icon-inactive-color);
+}

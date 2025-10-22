@@ -1,18 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Like from '.';
+import Help from '.';
 
-const meta: Meta<typeof Like> = {
-  title: 'ui/Like',
-  component: Like,
+const meta: Meta<typeof Help> = {
+  title: 'ui/Help',
+  component: Help,
   parameters: {
     layout: 'centered',
   },
   argTypes: {
-    variants: {
-      control: 'radio',
-      options: ['fill', 'solid', 'active'],
-    },
     width: {
       control: 'number',
     },
@@ -24,6 +20,6 @@ const meta: Meta<typeof Like> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Like>;
+type Story = StoryObj<typeof Help>;
 
 export const Preview: Story = {};

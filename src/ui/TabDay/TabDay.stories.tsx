@@ -1,29 +1,29 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Like from '.';
+import TabDay from '.';
 
-const meta: Meta<typeof Like> = {
-  title: 'ui/Like',
-  component: Like,
+const meta: Meta<typeof TabDay> = {
+  title: 'ui/TabDay',
+  component: TabDay,
   parameters: {
     layout: 'centered',
   },
   argTypes: {
-    variants: {
-      control: 'radio',
-      options: ['fill', 'solid', 'active'],
-    },
     width: {
       control: 'number',
     },
     height: {
       control: 'number',
     },
+    state: {
+      control: 'radio',
+      options: ['default', 'active'],
+    },
   },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Like>;
+type Story = StoryObj<typeof TabDay>;
 
 export const Preview: Story = {};

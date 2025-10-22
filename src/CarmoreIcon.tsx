@@ -20,6 +20,7 @@ import Cancel from './ui/Cancel';
 import Car from './ui/Car';
 import Chat from './ui/Chat';
 import Check from './ui/Check';
+import Checklist from './ui/Checklist';
 import Close from './ui/Close';
 import Copy from './ui/Copy';
 import CopyLink from './ui/CopyLink';
@@ -95,10 +96,16 @@ import CountryFlagUS from './ui/CountryFlagUS';
 import CountryFlagVN from './ui/CountryFlagVN';
 import CountryFlagZA from './ui/CountryFlagZA';
 import CS from './ui/CS';
+import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
+import ErrorInfo from './ui/ErrorInfo';
+import EV from './ui/EV';
+import FavHome from './ui/FavHome';
+import FavOffice from './ui/FavOffice';
 import Filter from './ui/Filter';
 import Global from './ui/Global';
+import Help from './ui/Help';
 import HotelActivity from './ui/HotelActivity';
 import HotelBusiness from './ui/HotelBusiness';
 import HotelCreditCard from './ui/HotelCreditCard';
@@ -119,11 +126,15 @@ import List from './ui/List';
 import ListDot from './ui/ListDot';
 import ListInactive from './ui/ListInactive';
 import LoadingSpinner from './ui/LoadingSpinner';
+import MethodCreditCard from './ui/MethodCreditCard';
 import Month from './ui/Month';
+import MoreInfo from './ui/MoreInfo';
+import NewCar from './ui/NewCar';
 import Nowhere from './ui/Nowhere';
 import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
 import PinMap from './ui/PinMap';
+import Point from './ui/Point';
 import Refresh from './ui/Refresh';
 import RentalHouse from './ui/RentalHouse';
 import Reply from './ui/Reply';
@@ -133,16 +144,47 @@ import Setting from './ui/Setting';
 import Share from './ui/Share';
 import StarSingle from './ui/StarSingle';
 import Station from './ui/Station';
+import Status from './ui/Status';
 import StepperMinus from './ui/StepperMinus';
 import StepperPlus from './ui/StepperPlus';
+import Success from './ui/Success';
 import SwitchArrow from './ui/SwitchArrow';
+import TabAlert from './ui/TabAlert';
+import TabDay from './ui/TabDay';
+import TabHome from './ui/TabHome';
+import TabHotel from './ui/TabHotel';
+import TabMypage from './ui/TabMypage';
 import ThumbUp from './ui/ThumbUp';
+import Time from './ui/Time';
 import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
 import Walk from './ui/Walk';
+import Warning from './ui/Warning';
 import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
+  // 1.3.0
+  checklist: Checklist,
+  'direction-up': DirectionUp,
+  'error-info': ErrorInfo,
+  ev: EV,
+  'fav-home': FavHome,
+  'fav-office': FavOffice,
+  help: Help,
+  'method-credit-card': MethodCreditCard,
+  'more-info': MoreInfo,
+  'new-car': NewCar,
+  point: Point,
+  status: Status,
+  success: Success,
+  'tab-alert': TabAlert,
+  'tab-day': TabDay,
+  'tab-home': TabHome,
+  'tab-hotel': TabHotel,
+  'tab-mypage': TabMypage,
+  time: Time,
+  warning: Warning,
+
   // 1.2.0
   airport: Airport,
   anchor: Anchor,

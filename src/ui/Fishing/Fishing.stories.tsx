@@ -1,29 +1,29 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Like from '.';
+import Fishing from '.';
 
-const meta: Meta<typeof Like> = {
-  title: 'ui/Like',
-  component: Like,
+const meta: Meta<typeof Fishing> = {
+  title: 'ui/Fishing',
+  component: Fishing,
   parameters: {
     layout: 'centered',
   },
   argTypes: {
-    variants: {
-      control: 'radio',
-      options: ['fill', 'solid', 'active'],
-    },
     width: {
       control: 'number',
     },
     height: {
       control: 'number',
     },
+    state: {
+      control: 'radio',
+      options: ['on', 'off'],
+    },
   },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Like>;
+type Story = StoryObj<typeof Fishing>;
 
 export const Preview: Story = {};
