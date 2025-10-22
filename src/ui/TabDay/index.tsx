@@ -29,7 +29,7 @@ const TabDay = (props: Props) => {
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
   const iconClass = getElementClass('TabDay');
-  const iconStateClass = isActive ? style['layout--active'] : style['layout-default'];
+  const iconStateClass = isActive ? style['layout--active'] : style['layout--default'];
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
