@@ -121,6 +121,7 @@ import HotelValet from './ui/HotelValet';
 import HotelWifi from './ui/HotelWifi';
 import InputDelete from './ui/InputDelete';
 import Jeju from './ui/Jeju';
+import KoreanBadge from './ui/KoreanBadge';
 import Like from './ui/Like';
 import List from './ui/List';
 import ListDot from './ui/ListDot';
@@ -133,6 +134,7 @@ import NewCar from './ui/NewCar';
 import Nowhere from './ui/Nowhere';
 import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
+import Passenger from './ui/Passenger';
 import PinMap from './ui/PinMap';
 import Point from './ui/Point';
 import Refresh from './ui/Refresh';
@@ -163,6 +165,10 @@ import Warning from './ui/Warning';
 import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
+  // 1.4.0
+  'korean-badge': KoreanBadge,
+  passenger: Passenger,
+
   // 1.3.0
   checklist: Checklist,
   'direction-up': DirectionUp,
