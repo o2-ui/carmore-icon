@@ -104,6 +104,7 @@ import EV from './ui/EV';
 import FavHome from './ui/FavHome';
 import FavOffice from './ui/FavOffice';
 import Filter from './ui/Filter';
+import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
 import HotelActivity from './ui/HotelActivity';
@@ -166,6 +167,7 @@ import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
   // 1.4.0
+  fuel: Fuel,
   'korean-badge': KoreanBadge,
   passenger: Passenger,
 
