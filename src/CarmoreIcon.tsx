@@ -3,6 +3,7 @@ import type { ComponentProps, ComponentType } from 'react';
 import React from 'react';
 
 import './global.css';
+import Aircon from './ui/Aircon';
 import Airport from './ui/Airport';
 import Anchor from './ui/Anchor';
 import ArrowDoubleDown from './ui/ArrowDoubleDown';
@@ -167,6 +168,7 @@ import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
   // 1.4.0
+  aircon: Aircon,
   fuel: Fuel,
   'korean-badge': KoreanBadge,
   passenger: Passenger,
