@@ -108,15 +108,14 @@ import EV from './ui/EV';
 import FavHome from './ui/FavHome';
 import FavOffice from './ui/FavOffice';
 import Filter from './ui/Filter';
+import Fitness from './ui/Fitness';
 import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
 import HotelDining from './ui/HotelDining';
 import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
-import HotelFitness from './ui/Fitness';
 import HotelParking from './ui/HotelParking';
-import HotelRoom from './ui/HotelRoom';
 import HotelService from './ui/HotelService';
 import HotelValet from './ui/HotelValet';
 import InputDelete from './ui/InputDelete';
@@ -141,6 +140,7 @@ import Point from './ui/Point';
 import Refresh from './ui/Refresh';
 import RentalHouse from './ui/RentalHouse';
 import Reply from './ui/Reply';
+import Room from './ui/Room';
 import RoundTrip from './ui/RoundTrip';
 import Search from './ui/Search';
 import Setting from './ui/Setting';
@@ -172,9 +172,11 @@ const ICON_MAP = {
   aircon: Aircon,
   business: Business,
   'credit-card': CreditCard,
+  fitness: Fitness,
   fuel: Fuel,
   kids: Kids,
   'korean-badge': KoreanBadge,
+  room: Room,
   passenger: Passenger,
   wifi: Wifi,
 
@@ -306,9 +308,7 @@ const ICON_MAP = {
   'hotel-dining': HotelDining,
   'hotel-etc': HotelETC,
   'hotel-facilities': HotelFacilities,
-  'hotel-fitness': HotelFitness,
   'hotel-parking': HotelParking,
-  'hotel-room': HotelRoom,
   'hotel-service': HotelService,
   'hotel-valet': HotelValet,
   'input-delete': InputDelete,

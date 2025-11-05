@@ -12,16 +12,16 @@ import { getElementClass, getElementId, mergeClassNames } from '@/util/string-he
  * @param {string} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
  * @remarks 웹 접근성을 위해 `role`, `aria-label` 등의 a11y 관련 props 설정을 권장합니다.
  */
-const HotelRoom = (props: SVGProps<SVGSVGElement>) => {
+const Room = (props: SVGProps<SVGSVGElement>) => {
   const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
-  const iconClass = getElementClass('HotelRoom');
+  const iconClass = getElementClass('Room');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('HotelRoomTitle');
+  const titleId = getElementId('RoomTitle');
   const titleText = ariaLabel || '숙실';
 
   return (
@@ -97,4 +97,4 @@ const HotelRoom = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default HotelRoom;
+export default Room;
