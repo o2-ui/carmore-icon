@@ -114,7 +114,7 @@ import Help from './ui/Help';
 import HotelDining from './ui/HotelDining';
 import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
-import HotelFitness from './ui/HotelFitness';
+import HotelFitness from './ui/Fitness';
 import HotelParking from './ui/HotelParking';
 import HotelRoom from './ui/HotelRoom';
 import HotelService from './ui/HotelService';

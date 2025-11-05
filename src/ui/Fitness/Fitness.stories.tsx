@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import HotelFitness from '.';
+import Fitness from '.';
 
-const meta: Meta<typeof HotelFitness> = {
-  title: 'ui/HotelFitness',
-  component: HotelFitness,
+const meta: Meta<typeof Fitness> = {
+  title: 'ui/Fitness',
+  component: Fitness,
   parameters: {
     layout: 'centered',
   },
@@ -20,6 +20,6 @@ const meta: Meta<typeof HotelFitness> = {
 
 export default meta;
 
-type Story = StoryObj<typeof HotelFitness>;
+type Story = StoryObj<typeof Fitness>;
 
 export const Preview: Story = {};
