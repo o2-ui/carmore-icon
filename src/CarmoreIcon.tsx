@@ -102,6 +102,7 @@ import CountryFlagVN from './ui/CountryFlagVN';
 import CountryFlagZA from './ui/CountryFlagZA';
 import CreditCard from './ui/CreditCard';
 import CS from './ui/CS';
+import Date from './ui/Date';
 import Dining from './ui/Dining';
 import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
@@ -178,6 +179,7 @@ const ICON_MAP = {
   business: Business,
   'credit-card': CreditCard,
   color: Color,
+  date: Date,
   dining: Dining,
   etc: ETC,
   facilities: Facilities,
