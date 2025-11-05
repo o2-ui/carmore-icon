@@ -11,16 +11,16 @@ import { getElementClass, getElementId, mergeClassNames } from '@/util/string-he
  * @param {string} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
  * @param {string} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
  */
-const HotelParking = (props: SVGProps<SVGSVGElement>) => {
+const Parking = (props: SVGProps<SVGSVGElement>) => {
   const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
-  const iconClass = getElementClass('HotelParking');
+  const iconClass = getElementClass('Parking');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('HotelParkingTitle');
+  const titleId = getElementId('ParkingTitle');
   const titleText = ariaLabel || '주차구역';
 
   return (
@@ -56,4 +56,4 @@ const HotelParking = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default HotelParking;
+export default Parking;

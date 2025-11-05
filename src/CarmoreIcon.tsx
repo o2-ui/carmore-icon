@@ -100,6 +100,7 @@ import CountryFlagVN from './ui/CountryFlagVN';
 import CountryFlagZA from './ui/CountryFlagZA';
 import CreditCard from './ui/CreditCard';
 import CS from './ui/CS';
+import Dining from './ui/Dining';
 import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
@@ -112,10 +113,8 @@ import Fitness from './ui/Fitness';
 import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
-import HotelDining from './ui/Dining';
 import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
-import HotelParking from './ui/HotelParking';
 import HotelService from './ui/HotelService';
 import HotelValet from './ui/HotelValet';
 import InputDelete from './ui/InputDelete';
@@ -134,6 +133,7 @@ import NewCar from './ui/NewCar';
 import Nowhere from './ui/Nowhere';
 import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
+import Parking from './ui/Parking';
 import Passenger from './ui/Passenger';
 import PinMap from './ui/PinMap';
 import Point from './ui/Point';
@@ -172,11 +172,13 @@ const ICON_MAP = {
   aircon: Aircon,
   business: Business,
   'credit-card': CreditCard,
+  dining: Dining,
   fitness: Fitness,
   fuel: Fuel,
   kids: Kids,
   'korean-badge': KoreanBadge,
   room: Room,
+  parking: Parking,
   passenger: Passenger,
   wifi: Wifi,
 
@@ -305,10 +307,8 @@ const ICON_MAP = {
   edit: Edit,
   filter: Filter,
   global: Global,
-  'hotel-dining': HotelDining,
   'hotel-etc': HotelETC,
   'hotel-facilities': HotelFacilities,
-  'hotel-parking': HotelParking,
   'hotel-service': HotelService,
   'hotel-valet': HotelValet,
   'input-delete': InputDelete,
