@@ -98,6 +98,7 @@ import CountryFlagTW from './ui/CountryFlagTW';
 import CountryFlagUS from './ui/CountryFlagUS';
 import CountryFlagVN from './ui/CountryFlagVN';
 import CountryFlagZA from './ui/CountryFlagZA';
+import CreditCard from './ui/CreditCard';
 import CS from './ui/CS';
 import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
@@ -110,7 +111,6 @@ import Filter from './ui/Filter';
 import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
-import HotelCreditCard from './ui/HotelCreditCard';
 import HotelDining from './ui/HotelDining';
 import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
@@ -171,6 +171,7 @@ const ICON_MAP = {
   activity: Activity,
   aircon: Aircon,
   business: Business,
+  'credit-card': CreditCard,
   fuel: Fuel,
   kids: Kids,
   'korean-badge': KoreanBadge,
@@ -302,7 +303,6 @@ const ICON_MAP = {
   edit: Edit,
   filter: Filter,
   global: Global,
-  'hotel-credit-card': HotelCreditCard,
   'hotel-dining': HotelDining,
   'hotel-etc': HotelETC,
   'hotel-facilities': HotelFacilities,

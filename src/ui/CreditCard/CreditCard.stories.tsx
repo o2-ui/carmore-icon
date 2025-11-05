@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import HotelCreditCard from '.';
+import CreditCard from '.';
 
-const meta: Meta<typeof HotelCreditCard> = {
-  title: 'ui/HotelCreditCard',
-  component: HotelCreditCard,
+const meta: Meta<typeof CreditCard> = {
+  title: 'ui/CreditCard',
+  component: CreditCard,
   parameters: {
     layout: 'centered',
   },
@@ -20,6 +20,6 @@ const meta: Meta<typeof HotelCreditCard> = {
 
 export default meta;
 
-type Story = StoryObj<typeof HotelCreditCard>;
+type Story = StoryObj<typeof CreditCard>;
 
 export const Preview: Story = {};
