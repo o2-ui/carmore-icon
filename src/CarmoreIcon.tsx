@@ -112,7 +112,7 @@ import Fitness from './ui/Fitness';
 import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
-import HotelDining from './ui/HotelDining';
+import HotelDining from './ui/Dining';
 import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
 import HotelParking from './ui/HotelParking';
