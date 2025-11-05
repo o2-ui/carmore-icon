@@ -3,6 +3,7 @@ import type { ComponentProps, ComponentType } from 'react';
 import React from 'react';
 
 import './global.css';
+import Activity from './ui/Activity';
 import Aircon from './ui/Aircon';
 import Airport from './ui/Airport';
 import Anchor from './ui/Anchor';
@@ -108,7 +109,6 @@ import Filter from './ui/Filter';
 import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
-import HotelActivity from './ui/HotelActivity';
 import HotelBusiness from './ui/HotelBusiness';
 import HotelCreditCard from './ui/HotelCreditCard';
 import HotelDining from './ui/HotelDining';
@@ -168,10 +168,12 @@ import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
   // 1.4.0
+  activity: Activity,
   aircon: Aircon,
   fuel: Fuel,
   'korean-badge': KoreanBadge,
   passenger: Passenger,
+  wifi: Wifi,
 
   // 1.3.0
   checklist: Checklist,
@@ -298,7 +300,6 @@ const ICON_MAP = {
   edit: Edit,
   filter: Filter,
   global: Global,
-  'hotel-activity': HotelActivity,
   'hotel-business': HotelBusiness,
   'hotel-credit-card': HotelCreditCard,
   'hotel-dining': HotelDining,
@@ -310,7 +311,6 @@ const ICON_MAP = {
   'hotel-room': HotelRoom,
   'hotel-service': HotelService,
   'hotel-valet': HotelValet,
-  wifi: Wifi,
   'input-delete': InputDelete,
   jeju: Jeju,
   like: Like,
