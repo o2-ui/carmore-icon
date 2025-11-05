@@ -115,13 +115,13 @@ import HotelDining from './ui/HotelDining';
 import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
 import HotelFitness from './ui/HotelFitness';
-import HotelKids from './ui/HotelKids';
 import HotelParking from './ui/HotelParking';
 import HotelRoom from './ui/HotelRoom';
 import HotelService from './ui/HotelService';
 import HotelValet from './ui/HotelValet';
 import InputDelete from './ui/InputDelete';
 import Jeju from './ui/Jeju';
+import Kids from './ui/Kids';
 import KoreanBadge from './ui/KoreanBadge';
 import Like from './ui/Like';
 import List from './ui/List';
@@ -172,6 +172,7 @@ const ICON_MAP = {
   aircon: Aircon,
   business: Business,
   fuel: Fuel,
+  kids: Kids,
   'korean-badge': KoreanBadge,
   passenger: Passenger,
   wifi: Wifi,
@@ -306,7 +307,6 @@ const ICON_MAP = {
   'hotel-etc': HotelETC,
   'hotel-facilities': HotelFacilities,
   'hotel-fitness': HotelFitness,
-  'hotel-kids': HotelKids,
   'hotel-parking': HotelParking,
   'hotel-room': HotelRoom,
   'hotel-service': HotelService,

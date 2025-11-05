@@ -5,23 +5,23 @@ import React from 'react';
 import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
- * @description SVG 아이콘 (HotelKids) 을 랜더링합니다.
+ * @description SVG 아이콘 (Kids) 을 랜더링합니다.
  * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
  * @param {string|number} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
  * @param {string|number} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
  * @remarks 웹 접근성을 위해 `role`, `aria-label` 등의 a11y 관련 props 설정을 권장합니다.
  */
-const HotelKids = (props: SVGProps<SVGSVGElement>) => {
+const Kids = (props: SVGProps<SVGSVGElement>) => {
   const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
-  const iconClass = getElementClass('HotelKids');
+  const iconClass = getElementClass('Kids');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('HotelKidsTitle');
+  const titleId = getElementId('KidsTitle');
   const titleText = ariaLabel || '어린이 놀이시설';
 
   return (
@@ -89,4 +89,4 @@ const HotelKids = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default HotelKids;
+export default Kids;
