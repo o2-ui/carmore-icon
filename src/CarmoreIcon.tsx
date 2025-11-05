@@ -116,7 +116,6 @@ import Help from './ui/Help';
 import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
 import HotelService from './ui/HotelService';
-import HotelValet from './ui/HotelValet';
 import InputDelete from './ui/InputDelete';
 import Jeju from './ui/Jeju';
 import Kids from './ui/Kids';
@@ -161,6 +160,7 @@ import ThumbUp from './ui/ThumbUp';
 import Time from './ui/Time';
 import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
+import Valet from './ui/Valet';
 import Walk from './ui/Walk';
 import Warning from './ui/Warning';
 import Wifi from './ui/Wifi';
@@ -180,6 +180,7 @@ const ICON_MAP = {
   room: Room,
   parking: Parking,
   passenger: Passenger,
+  valet: Valet,
   wifi: Wifi,
 
   // 1.3.0
@@ -310,7 +311,6 @@ const ICON_MAP = {
   'hotel-etc': HotelETC,
   'hotel-facilities': HotelFacilities,
   'hotel-service': HotelService,
-  'hotel-valet': HotelValet,
   'input-delete': InputDelete,
   jeju: Jeju,
   like: Like,

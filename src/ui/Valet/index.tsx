@@ -5,23 +5,23 @@ import React from 'react';
 import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
 
 /**
- * @description SVG 아이콘 (HotelValet) 을 랜더링합니다.
+ * @description SVG 아이콘 (Valet) 을 랜더링합니다.
  * @param props - SVGProps를 상속받은 props 객체.
  * @param {string} [props.className] - css 클래스.
  * @param {string|number} [props.width='1.5rem'] - 너비. (기본값: '1.5rem')
  * @param {string|number} [props.height='1.5rem'] - 높이. (기본값: '1.5rem')
  * @remarks 웹 접근성을 위해 `role`, `aria-label` 등의 a11y 관련 props 설정을 권장합니다.
  */
-const HotelValet = (props: SVGProps<SVGSVGElement>) => {
+const Valet = (props: SVGProps<SVGSVGElement>) => {
   const { className, width, height, role, 'aria-label': ariaLabel, ...rest } = props;
 
   const iconWidth: string | number = width || '1.5rem';
   const iconHeight: string | number = height || '1.5rem';
-  const iconClass = getElementClass('HotelValet');
+  const iconClass = getElementClass('Valet');
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('HotelValetTitle');
+  const titleId = getElementId('ValetTitle');
   const titleText = ariaLabel || '주차 대행';
 
   return (
@@ -63,4 +63,4 @@ const HotelValet = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default HotelValet;
+export default Valet;
