@@ -16,6 +16,7 @@ import ArrowRight from './ui/ArrowRight';
 import ArrowUp from './ui/ArrowUp';
 import ArrowUpKTX from './ui/ArrowUpKTX';
 import BackBtn from './ui/BackBtn';
+import Birth from './ui/Birth';
 import Bus from './ui/Bus';
 import Business from './ui/Business';
 import Call from './ui/Call';
@@ -172,6 +173,7 @@ const ICON_MAP = {
   // 1.4.0
   activity: Activity,
   aircon: Aircon,
+  birth: Birth,
   business: Business,
   'credit-card': CreditCard,
   color: Color,
