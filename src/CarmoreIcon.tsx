@@ -17,6 +17,7 @@ import ArrowUp from './ui/ArrowUp';
 import ArrowUpKTX from './ui/ArrowUpKTX';
 import BackBtn from './ui/BackBtn';
 import Bus from './ui/Bus';
+import Business from './ui/Business';
 import Call from './ui/Call';
 import Cancel from './ui/Cancel';
 import Car from './ui/Car';
@@ -109,7 +110,6 @@ import Filter from './ui/Filter';
 import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
-import HotelBusiness from './ui/HotelBusiness';
 import HotelCreditCard from './ui/HotelCreditCard';
 import HotelDining from './ui/HotelDining';
 import HotelETC from './ui/HotelETC';
@@ -170,6 +170,7 @@ const ICON_MAP = {
   // 1.4.0
   activity: Activity,
   aircon: Aircon,
+  business: Business,
   fuel: Fuel,
   'korean-badge': KoreanBadge,
   passenger: Passenger,
@@ -300,7 +301,6 @@ const ICON_MAP = {
   edit: Edit,
   filter: Filter,
   global: Global,
-  'hotel-business': HotelBusiness,
   'hotel-credit-card': HotelCreditCard,
   'hotel-dining': HotelDining,
   'hotel-etc': HotelETC,
