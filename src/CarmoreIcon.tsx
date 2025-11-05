@@ -134,6 +134,7 @@ import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
 import Parking from './ui/Parking';
 import Passenger from './ui/Passenger';
+import People from './ui/People';
 import PinMap from './ui/PinMap';
 import Point from './ui/Point';
 import Refresh from './ui/Refresh';
@@ -182,6 +183,7 @@ const ICON_MAP = {
   room: Room,
   parking: Parking,
   passenger: Passenger,
+  people: People,
   valet: Valet,
   wifi: Wifi,
 
