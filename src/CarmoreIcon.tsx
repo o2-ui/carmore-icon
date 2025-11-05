@@ -25,6 +25,7 @@ import Chat from './ui/Chat';
 import Check from './ui/Check';
 import Checklist from './ui/Checklist';
 import Close from './ui/Close';
+import Color from './ui/Color';
 import Copy from './ui/Copy';
 import CopyLink from './ui/CopyLink';
 import CountryFlagAE from './ui/CountryFlagAE';
@@ -173,6 +174,7 @@ const ICON_MAP = {
   aircon: Aircon,
   business: Business,
   'credit-card': CreditCard,
+  color: Color,
   dining: Dining,
   etc: ETC,
   facilities: Facilities,
