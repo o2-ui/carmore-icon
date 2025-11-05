@@ -105,6 +105,7 @@ import DirectionUp from './ui/DirectionUp';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
 import ErrorInfo from './ui/ErrorInfo';
+import ETC from './ui/ETC';
 import EV from './ui/EV';
 import FavHome from './ui/FavHome';
 import FavOffice from './ui/FavOffice';
@@ -113,7 +114,6 @@ import Fitness from './ui/Fitness';
 import Fuel from './ui/Fuel';
 import Global from './ui/Global';
 import Help from './ui/Help';
-import HotelETC from './ui/HotelETC';
 import HotelFacilities from './ui/HotelFacilities';
 import HotelService from './ui/HotelService';
 import InputDelete from './ui/InputDelete';
@@ -173,6 +173,7 @@ const ICON_MAP = {
   business: Business,
   'credit-card': CreditCard,
   dining: Dining,
+  etc: ETC,
   fitness: Fitness,
   fuel: Fuel,
   kids: Kids,
@@ -308,7 +309,6 @@ const ICON_MAP = {
   edit: Edit,
   filter: Filter,
   global: Global,
-  'hotel-etc': HotelETC,
   'hotel-facilities': HotelFacilities,
   'hotel-service': HotelService,
   'input-delete': InputDelete,
