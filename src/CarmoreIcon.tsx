@@ -120,7 +120,6 @@ import HotelParking from './ui/HotelParking';
 import HotelRoom from './ui/HotelRoom';
 import HotelService from './ui/HotelService';
 import HotelValet from './ui/HotelValet';
-import HotelWifi from './ui/HotelWifi';
 import InputDelete from './ui/InputDelete';
 import Jeju from './ui/Jeju';
 import KoreanBadge from './ui/KoreanBadge';
@@ -164,6 +163,7 @@ import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
 import Walk from './ui/Walk';
 import Warning from './ui/Warning';
+import Wifi from './ui/Wifi';
 import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
@@ -310,7 +310,7 @@ const ICON_MAP = {
   'hotel-room': HotelRoom,
   'hotel-service': HotelService,
   'hotel-valet': HotelValet,
-  'hotel-wifi': HotelWifi,
+  wifi: Wifi,
   'input-delete': InputDelete,
   jeju: Jeju,
   like: Like,

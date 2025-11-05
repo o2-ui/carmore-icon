@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import HotelWifi from '.';
+import Wifi from '.';
 
-const meta: Meta<typeof HotelWifi> = {
-  title: 'ui/HotelWifi',
-  component: HotelWifi,
+const meta: Meta<typeof Wifi> = {
+  title: 'ui/Wifi',
+  component: Wifi,
   parameters: {
     layout: 'centered',
   },
@@ -20,6 +20,6 @@ const meta: Meta<typeof HotelWifi> = {
 
 export default meta;
 
-type Story = StoryObj<typeof HotelWifi>;
+type Story = StoryObj<typeof Wifi>;
 
 export const Preview: Story = {};
