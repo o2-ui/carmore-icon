@@ -105,6 +105,7 @@ import CS from './ui/CS';
 import Date from './ui/Date';
 import Dining from './ui/Dining';
 import DirectionUp from './ui/DirectionUp';
+import Distance from './ui/Distance';
 import Door from './ui/Door';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
@@ -186,6 +187,7 @@ const ICON_MAP = {
   color: Color,
   date: Date,
   dining: Dining,
+  distance: Distance,
   door: Door,
   etc: ETC,
   facilities: Facilities,
