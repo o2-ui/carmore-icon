@@ -117,6 +117,7 @@ import FavOffice from './ui/FavOffice';
 import Filter from './ui/Filter';
 import Fitness from './ui/Fitness';
 import Fuel from './ui/Fuel';
+import Gear from './ui/Gear';
 import Global from './ui/Global';
 import Help from './ui/Help';
 import HotelService from './ui/HotelService';
@@ -187,6 +188,7 @@ const ICON_MAP = {
   facilities: Facilities,
   fitness: Fitness,
   fuel: Fuel,
+  gear: Gear,
   kids: Kids,
   'korean-badge': KoreanBadge,
   location: Location,
