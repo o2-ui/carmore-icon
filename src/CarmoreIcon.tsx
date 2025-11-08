@@ -132,6 +132,7 @@ import ListDot from './ui/ListDot';
 import ListInactive from './ui/ListInactive';
 import LoadingSpinner from './ui/LoadingSpinner';
 import Location from './ui/Location';
+import Luggage from './ui/Luggage';
 import MethodCreditCard from './ui/MethodCreditCard';
 import Month from './ui/Month';
 import MoreInfo from './ui/MoreInfo';
@@ -194,6 +195,7 @@ const ICON_MAP = {
   kids: Kids,
   'korean-badge': KoreanBadge,
   location: Location,
+  luggage: Luggage,
   room: Room,
   parking: Parking,
   passenger: Passenger,
