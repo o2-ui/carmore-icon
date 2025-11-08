@@ -122,6 +122,7 @@ import Global from './ui/Global';
 import Help from './ui/Help';
 import HotelService from './ui/HotelService';
 import InputDelete from './ui/InputDelete';
+import InstrumentPanel from './ui/InstrumentPanel';
 import Jeju from './ui/Jeju';
 import Kids from './ui/Kids';
 import KoreanBadge from './ui/KoreanBadge';
@@ -189,6 +190,7 @@ const ICON_MAP = {
   fitness: Fitness,
   fuel: Fuel,
   gear: Gear,
+  'instrument-panel': InstrumentPanel,
   kids: Kids,
   'korean-badge': KoreanBadge,
   location: Location,
