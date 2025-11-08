@@ -105,6 +105,7 @@ import CS from './ui/CS';
 import Date from './ui/Date';
 import Dining from './ui/Dining';
 import DirectionUp from './ui/DirectionUp';
+import Discount1Badge from './ui/Discount1Badge';
 import Distance from './ui/Distance';
 import Door from './ui/Door';
 import Download from './ui/Download';
@@ -187,6 +188,7 @@ const ICON_MAP = {
   color: Color,
   date: Date,
   dining: Dining,
+  'discount-1-badge': Discount1Badge,
   distance: Distance,
   door: Door,
   etc: ETC,
