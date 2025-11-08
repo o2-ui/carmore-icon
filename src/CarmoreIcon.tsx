@@ -170,6 +170,7 @@ import Time from './ui/Time';
 import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
 import Valet from './ui/Valet';
+import VehicleYear from './ui/VehicleYear';
 import Walk from './ui/Walk';
 import Warning from './ui/Warning';
 import Wifi from './ui/Wifi';
@@ -201,6 +202,7 @@ const ICON_MAP = {
   passenger: Passenger,
   people: People,
   valet: Valet,
+  'vehicle-year': VehicleYear,
   wifi: Wifi,
 
   // 1.3.0
