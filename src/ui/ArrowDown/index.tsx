@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 const ARROW_DOWN_PATH_D = {
   THIN: 'M12.4949 15.4949C12.2216 15.7683 11.7783 15.7683 11.505 15.4949L5.50498 9.49492C5.23161 9.22156 5.23161 8.77834 5.50498 8.50498C5.77834 8.23161 6.22156 8.23161 6.49493 8.50498L12 14.01L17.505 8.50498C17.7783 8.23161 18.2216 8.23161 18.4949 8.50498C18.7683 8.77834 18.7683 9.22156 18.4949 9.49493L12.4949 15.4949Z',
@@ -32,7 +32,6 @@ const ArrowDown = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ArrowDownTitle');
   const titleText = ariaLabel || '아래로';
 
   return (
@@ -44,10 +43,9 @@ const ArrowDown = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path fillRule={'evenodd'} clipRule={'evenodd'} d={isThin ? ARROW_DOWN_PATH_D['THIN'] : ARROW_DOWN_PATH_D['BOLD']} fill={'currentColor'} />
     </svg>
   );

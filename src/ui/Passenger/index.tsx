@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (승객) 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Passenger = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('PassengerTitle');
   const titleText = ariaLabel || '승객';
 
   return (
@@ -33,10 +32,9 @@ const Passenger = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d="M18 19.593V17.3493C18 14.5729 16.254 12.2134 13.8508 11.3994C15.0063 10.721 15.7905 9.4304 15.7905 7.95119C15.7905 5.77373 14.0889 4 12 4C9.91111 4 8.20952 5.77373 8.20952 7.95119C8.20952 9.4304 8.99365 10.721 10.1492 11.3994C7.74286 12.2134 6 14.5729 6 17.3493V19.593C6 19.818 6.1746 20 6.39048 20H17.6159C17.8254 19.9967 18 19.818 18 19.593Z"
         fill={'currentColor'}

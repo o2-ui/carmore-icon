@@ -87,6 +87,24 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --access public
 
+      # 메타 정보 출력.
+      # - (version, total files, package size, unpacked size)
+      - name: Show package metrics
+        if: steps.version.outputs.skip != 'true'
+        run: |
+          echo "Collecting package metrics..."
+          PACK_JSON=$(npm pack --dry-run --json)
+
+          VERSION=$(echo "$PACK_JSON" | jq -r '.[0].version')
+          SIZE=$(echo "$PACK_JSON" | jq -r '.[0].size')
+          UNPACKED=$(echo "$PACK_JSON" | jq -r '.[0].unpackedSize')
+          FILES=$(echo "$PACK_JSON" | jq -r '.[0].files | length')
+
+          echo "Version: $VERSION"
+          echo "Total Files: $FILES"
+          echo "Package Size (tarball): $SIZE bytes"
+          echo "Unpacked Size: $UNPACKED bytes"
+
       # GitHub Release 작성.
       - name: Create GitHub Release
         if: steps.version.outputs.skip != 'true'

@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('편집하기') 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Edit = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('EditTitle');
   const titleText = ariaLabel || '편집하기';
 
   return (
@@ -33,10 +32,9 @@ const Edit = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path d={'M3.58779 20.7392C3.25706 20.8137 2.93653 20.4924 3.01083 20.1609L3.84668 16.4312L7.30841 19.9013L3.58779 20.7392Z'} fill={'currentColor'} />
       <rect width={'4.83574'} height={'13.2315'} transform={'matrix(-0.706244 -0.707969 0.706244 -0.707969 8.06714 19.0986)'} fill={'currentColor'} />
       <path

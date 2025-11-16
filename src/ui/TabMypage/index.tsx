@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type StateType = 'default' | 'active';
 
@@ -33,7 +33,6 @@ const TabMypage = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('TabMypageTitle');
   const titleText = ariaLabel || '내 정보 탭';
 
   return (
@@ -45,10 +44,9 @@ const TabMypage = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <circle cx={'11.9999'} cy={'7.55556'} r={'5.55556'} fill={'currentColor'} />
       <path d={'M2 21.9999C2 17.7044 5.48223 14.2222 9.77777 14.2222H14.2222C18.5178 14.2222 22 17.7044 22 21.9999H2Z'} fill={'currentColor'} />
     </svg>

@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('성공') 을 랜더링합니다.
@@ -20,7 +20,6 @@ const Success = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('SuccessTitle');
   const titleText = ariaLabel || '성공';
 
   return (
@@ -32,10 +31,9 @@ const Success = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 25 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path d={'M22.9168 12C22.9168 17.5228 18.2531 22 12.5002 22C6.7472 22 2.0835 17.5228 2.0835 12C2.0835 6.47715 6.7472 2 12.5002 2C18.2531 2 22.9168 6.47715 22.9168 12Z'} fill={'currentColor'} />
       <path
         d={

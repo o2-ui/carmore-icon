@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (CreditCard) 을 랜더링합니다.
@@ -21,7 +21,6 @@ const CreditCard = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('CreditCardTitle');
   const titleText = ariaLabel || '신용카드';
 
   return (
@@ -32,11 +31,10 @@ const CreditCard = (props: SVGProps<SVGSVGElement>) => {
       viewBox={'0 0 24 24'}
       xmlns={'http://www.w3.org/2000/svg'}
       role={iconRole}
-      aria-labelledby={titleId}
       fill={'none'}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M16.6153 16.6152C16.1055 16.6152 15.6923 16.2019 15.6923 15.6921C15.6923 15.1823 16.1055 14.769 16.6153 14.769H18.4615C18.9713 14.769 19.3846 15.1823 19.3846 15.6921C19.3846 16.2019 18.9713 16.6152 18.4615 16.6152H16.6153Z'

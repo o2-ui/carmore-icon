@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type Props = SVGProps<SVGSVGElement> & {
   thin?: boolean;
@@ -26,7 +26,6 @@ const ArrowLeft = (props: Props) => {
   const iconClass = getElementClass('ArrowLeft');
 
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ArrowLeftTitle');
   const titleText = ariaLabel || '왼쪽으로';
 
   const viewBox = half ? '0 0 12 24' : '0 0 24 24';
@@ -55,10 +54,9 @@ const ArrowLeft = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={viewBox}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path fillRule={'evenodd'} clipRule={'evenodd'} d={pathD} fill={'currentColor'} />
     </svg>
   );

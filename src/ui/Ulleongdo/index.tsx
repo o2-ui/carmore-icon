@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('울릉도') 을 랜더링합니다.
@@ -20,7 +20,6 @@ const Ulleongdo = (props: SVGProps<SVGSVGElement>) => {
   const iconClass = getElementClass('Ulleongdo');
 
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('UlleongdoTitle');
   const titleText = ariaLabel || '울릉도';
 
   return (
@@ -32,10 +31,9 @@ const Ulleongdo = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path d={'M23 18.5005C22.9999 19.6049 22.1045 20.5005 21 20.5005H3C1.89552 20.5005 1.00015 19.6049 1 18.5005V17.6196H23V18.5005Z'} fill={'#87B9FF'} />
       <path
         d={

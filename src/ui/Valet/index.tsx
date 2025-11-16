@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (Valet) 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Valet = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ValetTitle');
   const titleText = ariaLabel || '주차 대행';
 
   return (
@@ -32,11 +31,10 @@ const Valet = (props: SVGProps<SVGSVGElement>) => {
       viewBox={'0 0 24 24'}
       xmlns={'http://www.w3.org/2000/svg'}
       role={iconRole}
-      aria-labelledby={titleId}
       fill={'none'}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M11.5067 9.89847H12.4821C12.8704 9.89847 13.1852 9.58366 13.1852 9.19535C13.1852 8.80703 12.8704 8.49222 12.4821 8.49222H11.5067C11.1184 8.49222 10.8036 8.80703 10.8036 9.19535C10.8036 9.58366 11.1184 9.89847 11.5067 9.89847Z'

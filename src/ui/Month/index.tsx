@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('달력, 월') 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Month = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('MonthTitle');
   const titleText = ariaLabel || '달력';
 
   return (
@@ -33,10 +32,9 @@ const Month = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M14.5101 10.5C16.2768 10.5 17.0503 11.6937 17.0503 13.7947V14.2053C17.0503 16.3063 16.2768 17.5 14.5101 17.5C12.7433 17.5 11.9698 16.3063 11.9698 14.2053V13.7947C11.9698 11.6937 12.7433 10.5 14.5101 10.5ZM14.5101 11.6555C13.5169 11.6555 13.2017 12.3049 13.2017 13.8806V14.1194C13.2017 15.6951 13.5169 16.3445 14.5101 16.3445C15.5032 16.3445 15.8184 15.6951 15.8184 14.1194V13.8806C15.8184 12.3049 15.5032 11.6555 14.5101 11.6555Z'

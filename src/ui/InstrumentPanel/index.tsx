@@ -23,7 +23,6 @@ const InstrumentPanel = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본 설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('InstrumentPanelTitle');
   const titleText = ariaLabel || '차량 계기판';
 
   return (
@@ -35,10 +34,9 @@ const InstrumentPanel = (props: SVGProps<SVGSVGElement>) => {
       height={iconHeight}
       fill={'none'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
 
       <mask id={maskId} maskUnits={'userSpaceOnUse'} x={0} y={0} width={24} height={24}>
         <rect x={0} y={0} width={24} height={24} fill={'white'} />

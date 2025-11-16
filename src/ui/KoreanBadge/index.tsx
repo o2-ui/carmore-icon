@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('대한민국') 을 랜더링합니다.
@@ -15,7 +15,6 @@ const KoreanBadge = (props: SVGProps<SVGSVGElement>) => {
   const iconClass = getElementClass('KoreanBadge');
 
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('KoreanBadgeTitle');
   const titleText = ariaLabel || '대한민국';
 
   return (
@@ -27,11 +26,10 @@ const KoreanBadge = (props: SVGProps<SVGSVGElement>) => {
       height={iconHeight}
       fill={'none'}
       role={iconRole}
-      aria-labelledby={titleId}
       preserveAspectRatio={'xMidYMid meet'}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
 
       <path d={'M22.6795 4H1.3205V18.25H22.6795V4Z'} fill={'white'} stroke={'#E3E3E3'} strokeWidth={'0.5'} strokeLinejoin={'round'} />
       <path d={'M16.7179 5.83396L16.2356 6.15588L18.2165 9.12384L18.6988 8.80192L16.7179 5.83396Z'} fill={'#231815'} stroke={'#231815'} strokeWidth={'0.00743091'} />
