@@ -3,6 +3,8 @@ import type { ComponentProps, ComponentType } from 'react';
 import React from 'react';
 
 import './global.css';
+import Activity from './ui/Activity';
+import Aircon from './ui/Aircon';
 import Airport from './ui/Airport';
 import Anchor from './ui/Anchor';
 import ArrowDoubleDown from './ui/ArrowDoubleDown';
@@ -14,7 +16,9 @@ import ArrowRight from './ui/ArrowRight';
 import ArrowUp from './ui/ArrowUp';
 import ArrowUpKTX from './ui/ArrowUpKTX';
 import BackBtn from './ui/BackBtn';
+import Birth from './ui/Birth';
 import Bus from './ui/Bus';
+import Business from './ui/Business';
 import Call from './ui/Call';
 import Cancel from './ui/Cancel';
 import Car from './ui/Car';
@@ -22,6 +26,7 @@ import Chat from './ui/Chat';
 import Check from './ui/Check';
 import Checklist from './ui/Checklist';
 import Close from './ui/Close';
+import Color from './ui/Color';
 import Copy from './ui/Copy';
 import CopyLink from './ui/CopyLink';
 import CountryFlagAE from './ui/CountryFlagAE';
@@ -95,37 +100,42 @@ import CountryFlagTW from './ui/CountryFlagTW';
 import CountryFlagUS from './ui/CountryFlagUS';
 import CountryFlagVN from './ui/CountryFlagVN';
 import CountryFlagZA from './ui/CountryFlagZA';
+import CreditCard from './ui/CreditCard';
 import CS from './ui/CS';
+import Date from './ui/Date';
+import Dining from './ui/Dining';
 import DirectionUp from './ui/DirectionUp';
+import Discount1Badge from './ui/Discount1Badge';
+import Discount2Badge from './ui/Discount2Badge';
+import Distance from './ui/Distance';
+import Door from './ui/Door';
 import Download from './ui/Download';
 import Edit from './ui/Edit';
 import ErrorInfo from './ui/ErrorInfo';
+import ETC from './ui/ETC';
 import EV from './ui/EV';
+import Facilities from './ui/Facilities';
 import FavHome from './ui/FavHome';
 import FavOffice from './ui/FavOffice';
 import Filter from './ui/Filter';
+import Fitness from './ui/Fitness';
+import Fuel from './ui/Fuel';
+import Gear from './ui/Gear';
 import Global from './ui/Global';
 import Help from './ui/Help';
-import HotelActivity from './ui/HotelActivity';
-import HotelBusiness from './ui/HotelBusiness';
-import HotelCreditCard from './ui/HotelCreditCard';
-import HotelDining from './ui/HotelDining';
-import HotelETC from './ui/HotelETC';
-import HotelFacilities from './ui/HotelFacilities';
-import HotelFitness from './ui/HotelFitness';
-import HotelKids from './ui/HotelKids';
-import HotelParking from './ui/HotelParking';
-import HotelRoom from './ui/HotelRoom';
 import HotelService from './ui/HotelService';
-import HotelValet from './ui/HotelValet';
-import HotelWifi from './ui/HotelWifi';
 import InputDelete from './ui/InputDelete';
+import InstrumentPanel from './ui/InstrumentPanel';
 import Jeju from './ui/Jeju';
+import Kids from './ui/Kids';
+import KoreanBadge from './ui/KoreanBadge';
 import Like from './ui/Like';
 import List from './ui/List';
 import ListDot from './ui/ListDot';
 import ListInactive from './ui/ListInactive';
 import LoadingSpinner from './ui/LoadingSpinner';
+import Location from './ui/Location';
+import Luggage from './ui/Luggage';
 import MethodCreditCard from './ui/MethodCreditCard';
 import Month from './ui/Month';
 import MoreInfo from './ui/MoreInfo';
@@ -133,11 +143,15 @@ import NewCar from './ui/NewCar';
 import Nowhere from './ui/Nowhere';
 import Oneway from './ui/Oneway';
 import OutLink from './ui/OutLink';
+import Parking from './ui/Parking';
+import Passenger from './ui/Passenger';
+import People from './ui/People';
 import PinMap from './ui/PinMap';
 import Point from './ui/Point';
 import Refresh from './ui/Refresh';
 import RentalHouse from './ui/RentalHouse';
 import Reply from './ui/Reply';
+import Room from './ui/Room';
 import RoundTrip from './ui/RoundTrip';
 import Search from './ui/Search';
 import Setting from './ui/Setting';
@@ -158,11 +172,45 @@ import ThumbUp from './ui/ThumbUp';
 import Time from './ui/Time';
 import Ulleongdo from './ui/Ulleongdo';
 import User from './ui/User';
+import Valet from './ui/Valet';
+import VehicleYear from './ui/VehicleYear';
 import Walk from './ui/Walk';
 import Warning from './ui/Warning';
+import Wifi from './ui/Wifi';
 import WithCar from './ui/WithCar';
 
 const ICON_MAP = {
+  // 1.4.0
+  activity: Activity,
+  aircon: Aircon,
+  birth: Birth,
+  business: Business,
+  'credit-card': CreditCard,
+  color: Color,
+  date: Date,
+  dining: Dining,
+  'discount-1-badge': Discount1Badge,
+  'discount-2-badge': Discount2Badge,
+  distance: Distance,
+  door: Door,
+  etc: ETC,
+  facilities: Facilities,
+  fitness: Fitness,
+  fuel: Fuel,
+  gear: Gear,
+  'instrument-panel': InstrumentPanel,
+  kids: Kids,
+  'korean-badge': KoreanBadge,
+  location: Location,
+  luggage: Luggage,
+  room: Room,
+  parking: Parking,
+  passenger: Passenger,
+  people: People,
+  valet: Valet,
+  'vehicle-year': VehicleYear,
+  wifi: Wifi,
+
   // 1.3.0
   checklist: Checklist,
   'direction-up': DirectionUp,
@@ -288,19 +336,7 @@ const ICON_MAP = {
   edit: Edit,
   filter: Filter,
   global: Global,
-  'hotel-activity': HotelActivity,
-  'hotel-business': HotelBusiness,
-  'hotel-credit-card': HotelCreditCard,
-  'hotel-dining': HotelDining,
-  'hotel-etc': HotelETC,
-  'hotel-facilities': HotelFacilities,
-  'hotel-fitness': HotelFitness,
-  'hotel-kids': HotelKids,
-  'hotel-parking': HotelParking,
-  'hotel-room': HotelRoom,
   'hotel-service': HotelService,
-  'hotel-valet': HotelValet,
-  'hotel-wifi': HotelWifi,
   'input-delete': InputDelete,
   jeju: Jeju,
   like: Like,
