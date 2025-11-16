@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type StateType = 'on' | 'off';
 
@@ -32,7 +32,6 @@ const Solider = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('SoliderTitle');
   const titleText = ariaLabel || '군인';
 
   return (
@@ -44,10 +43,9 @@ const Solider = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M17 14C19.2092 14 20.9998 15.7912 21 18V21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21V18C18.9998 16.8954 18.1043 16 17 16H7C5.89543 16 5 16.8954 5 18V21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21V18C3 15.7909 4.79086 14 7 14H17ZM12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3ZM12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5Z'

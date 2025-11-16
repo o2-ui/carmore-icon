@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('닫기') 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Close = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('CloseTitle');
   const titleText = ariaLabel || '닫기';
 
   return (
@@ -33,10 +32,9 @@ const Close = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <rect x={'0.00195312'} width={'24'} height={'24'} rx={'6'} fill={'currentColor'} fillOpacity={'0.1'} />
       <path
         fillRule={'evenodd'}

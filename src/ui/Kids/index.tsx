@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (Kids) 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Kids = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('KidsTitle');
   const titleText = ariaLabel || '어린이 놀이시설';
 
   return (
@@ -32,11 +31,10 @@ const Kids = (props: SVGProps<SVGSVGElement>) => {
       viewBox={'0 0 24 24'}
       xmlns={'http://www.w3.org/2000/svg'}
       role={iconRole}
-      aria-labelledby={titleId}
       fill={'none'}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         fillRule={'evenodd'}
         clipRule={'evenodd'}

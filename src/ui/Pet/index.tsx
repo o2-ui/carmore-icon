@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type StateType = 'on' | 'off';
 
@@ -32,7 +32,6 @@ const Pet = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('PetTitle');
   const titleText = ariaLabel || '반려동물';
 
   return (
@@ -44,10 +43,9 @@ const Pet = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path d={'M4.5 11.25C5.74264 11.25 6.75 10.2426 6.75 9C6.75 7.75736 5.74264 6.75 4.5 6.75C3.25736 6.75 2.25 7.75736 2.25 9C2.25 10.2426 3.25736 11.25 4.5 11.25Z'} fill={'currentColor'} />
       <path d={'M9 7.5C10.2426 7.5 11.25 6.49264 11.25 5.25C11.25 4.00736 10.2426 3 9 3C7.75736 3 6.75 4.00736 6.75 5.25C6.75 6.49264 7.75736 7.5 9 7.5Z'} fill={'currentColor'} />
       <path d={'M15 7.5C16.2426 7.5 17.25 6.49264 17.25 5.25C17.25 4.00736 16.2426 3 15 3C13.7574 3 12.75 4.00736 12.75 5.25C12.75 6.49264 13.7574 7.5 15 7.5Z'} fill={'currentColor'} />

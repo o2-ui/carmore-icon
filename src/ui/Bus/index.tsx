@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('버스') 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Bus = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('BusTitle');
   const titleText = ariaLabel || '버스';
 
   return (
@@ -33,11 +32,10 @@ const Bus = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       fill={'none'}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         fillRule={'evenodd'}
         clipRule={'evenodd'}

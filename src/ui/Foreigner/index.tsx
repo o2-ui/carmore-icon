@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type StateType = 'on' | 'off';
 
@@ -32,7 +32,6 @@ const Foreigner = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ForeignerTitle');
   const titleText = ariaLabel || '다국어 지원';
 
   return (
@@ -44,10 +43,9 @@ const Foreigner = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         fillRule={'evenodd'}
         clipRule={'evenodd'}

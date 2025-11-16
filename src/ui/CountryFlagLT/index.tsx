@@ -22,7 +22,6 @@ const CountryFlagLT = (props: SVGProps<SVGSVGElement>) => {
   const maskId = getElementId('CountryFlagLTMask');
 
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('CountryFlagLTTitle');
   const titleText = ariaLabel || '리투아니아';
 
   return (
@@ -34,10 +33,9 @@ const CountryFlagLT = (props: SVGProps<SVGSVGElement>) => {
       height={iconHeight}
       fill={'none'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <mask id={maskId} maskUnits={'userSpaceOnUse'} x={'0'} y={'0'} width={'24'} height={'16'}>
         <rect x={0.923096} y={0.615234} width={22.1538} height={14.7692} rx={2} fill={'white'} />
       </mask>

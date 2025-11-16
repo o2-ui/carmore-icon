@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('목록') 을 랜더링합니다.
@@ -19,7 +19,6 @@ const ListDot = (props: SVGProps<SVGSVGElement>) => {
   const iconClass = getElementClass('ListDot');
 
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ListDotTitle');
   const titleText = ariaLabel || '목록';
 
   return (
@@ -31,10 +30,9 @@ const ListDot = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M19.5999 16.8501C20.0969 16.8501 20.5002 17.2534 20.5002 17.7505C20.5 18.2474 20.0968 18.6499 19.5999 18.6499H7.70044C7.20351 18.6499 6.80026 18.2474 6.80005 17.7505C6.80005 17.2534 7.20338 16.8501 7.70044 16.8501H19.5999ZM19.5999 11.1001C20.0969 11.1001 20.5002 11.5034 20.5002 12.0005C20.5 12.4974 20.0968 12.8999 19.5999 12.8999H7.70044C7.20351 12.8999 6.80026 12.4974 6.80005 12.0005C6.80005 11.5034 7.20338 11.1001 7.70044 11.1001H19.5999ZM19.5999 5.3501C20.0969 5.3501 20.5002 5.75343 20.5002 6.25049C20.5 6.74736 20.0968 7.1499 19.5999 7.1499H7.70044C7.20351 7.1499 6.80026 6.74736 6.80005 6.25049C6.80005 5.75343 7.20338 5.3501 7.70044 5.3501H19.5999Z'

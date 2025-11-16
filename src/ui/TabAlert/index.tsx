@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type StateType = 'default' | 'active';
 
@@ -33,7 +33,6 @@ const TabAlert = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('TabAlertTitle');
   const titleText = ariaLabel || '알림 탭';
 
   return (
@@ -45,10 +44,9 @@ const TabAlert = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       {isActive && (
         <>
           <path

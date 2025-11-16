@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('와이파이') 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Wifi = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('WifiTitle');
   const titleText = ariaLabel || '와이파이';
 
   return (
@@ -33,10 +32,9 @@ const Wifi = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M12.0001 20.3068C12.7648 20.3068 13.3847 19.6869 13.3847 18.9222C13.3847 18.1575 12.7648 17.5376 12.0001 17.5376C11.2354 17.5376 10.6155 18.1575 10.6155 18.9222C10.6155 19.6869 11.2354 20.3068 12.0001 20.3068Z'

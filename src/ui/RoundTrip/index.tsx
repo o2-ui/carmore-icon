@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('왕복') 을 랜더링합니다.
@@ -19,7 +19,6 @@ const RoundTrip = (props: SVGProps<SVGSVGElement>) => {
   const iconClass = getElementClass('RoundTrip');
 
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('RoundTripTitle');
   const titleText = ariaLabel || '왕복';
 
   return (
@@ -31,10 +30,9 @@ const RoundTrip = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M15.4697 6.15533C15.1768 5.86244 15.1768 5.38756 15.4697 5.09467C15.7626 4.80178 16.2374 4.80178 16.5303 5.09467L19.5303 8.09467C19.6768 8.24112 19.75 8.43306 19.75 8.625C19.75 8.72669 19.7298 8.82366 19.6931 8.91209C19.6565 9.00055 19.6022 9.08342 19.5303 9.15533L16.5303 12.1553C16.2374 12.4482 15.7626 12.4482 15.4697 12.1553C15.1768 11.8624 15.1768 11.3876 15.4697 11.0947L17.1893 9.375H5C4.58579 9.375 4.25 9.03921 4.25 8.625C4.25 8.21079 4.58579 7.875 5 7.875H17.1893L15.4697 6.15533Z'

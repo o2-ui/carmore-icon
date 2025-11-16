@@ -4,7 +4,7 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 type StateType = 'default' | 'active';
 
@@ -33,7 +33,6 @@ const TabHotel = (props: Props) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('TabHotelTitle');
   const titleText = ariaLabel || '호텔 탭';
 
   return (
@@ -45,10 +44,9 @@ const TabHotel = (props: Props) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M5.42676 2.8C5.42676 2.63431 5.56107 2.5 5.72676 2.5H18.2728C18.4385 2.5 18.5728 2.63431 18.5728 2.8V4.2357C18.5728 4.40139 18.4385 4.5357 18.2728 4.5357H5.72676C5.56107 4.5357 5.42676 4.40139 5.42676 4.2357V2.8Z'

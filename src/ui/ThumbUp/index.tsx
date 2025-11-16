@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (엄지척) 을 랜더링합니다.
@@ -21,7 +21,6 @@ const ThumbUp = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('ThumbUpTitle');
   const titleText = ariaLabel || '엄지척';
 
   return (
@@ -32,10 +31,9 @@ const ThumbUp = (props: SVGProps<SVGSVGElement>) => {
       height={iconHeight}
       xmlns={'http://www.w3.org/2000/svg'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         fillRule={'evenodd'}
         clipRule={'evenodd'}

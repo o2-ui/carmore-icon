@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 을 랜더링합니다.
@@ -21,7 +21,6 @@ const PinMap = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('PinMapTitle');
   const titleText = ariaLabel || '위치보기';
 
   return (
@@ -33,10 +32,9 @@ const PinMap = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path d={'M13.8 8.4C13.8 9.14558 13.1956 9.75 12.45 9.75C11.7044 9.75 11.1 9.14558 11.1 8.4C11.1 7.65442 11.7044 7.05 12.45 7.05C13.1956 7.05 13.8 7.65442 13.8 8.4Z'} fill={'currentColor'} />
       <path
         fillRule={'evenodd'}

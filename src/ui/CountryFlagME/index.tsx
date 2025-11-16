@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (몬테네그로 국기) 을 랜더링합니다.
@@ -21,7 +21,6 @@ const CountryFlagME = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('CountryFlagMETitle');
   const titleText = ariaLabel || '몬테네그로';
 
   return (
@@ -32,11 +31,10 @@ const CountryFlagME = (props: SVGProps<SVGSVGElement>) => {
       width={iconWidth}
       height={iconHeight}
       role={iconRole}
-      aria-labelledby={titleId}
       fill={'none'}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <rect x={0.923} y={0.615} width={22.154} height={14.769} rx={2} fill="#E6BE53" />
       <rect x={1.7868} y={1.479} width={20.4265} height={13.0418} fill="#E01D24" />
       <path

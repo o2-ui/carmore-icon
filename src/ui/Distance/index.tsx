@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 (Distance, 주행거리) 을 랜더링합니다.
@@ -21,7 +21,6 @@ const Distance = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본 설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('DistanceTitle');
   const titleText = ariaLabel || '주행거리';
 
   return (
@@ -33,10 +32,9 @@ const Distance = (props: SVGProps<SVGSVGElement>) => {
       height={iconHeight}
       fill={'none'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <rect x={'3.35254'} y={'15.1982'} width={'17.5904'} height={'2.05225'} fill={'currentColor'} />
       <path d={'M6.17383 18.1978L18.1637 18.1978V20.25H6.17383V18.1978Z'} fill={'currentColor'} />
       <path

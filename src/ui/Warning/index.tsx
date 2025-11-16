@@ -2,7 +2,7 @@ import type { AriaRole, SVGProps } from 'react';
 
 import React from 'react';
 
-import { getElementClass, getElementId, mergeClassNames } from '@/util/string-helper';
+import { getElementClass, mergeClassNames } from '@/util/string-helper';
 
 /**
  * @description SVG 아이콘 ('경고알림') 을 랜더링합니다.
@@ -20,7 +20,6 @@ const Warning = (props: SVGProps<SVGSVGElement>) => {
 
   /* a11y 기본설정 */
   const iconRole: AriaRole = role || 'img';
-  const titleId = getElementId('WarningTitle');
   const titleText = ariaLabel || '경고알림';
 
   return (
@@ -32,10 +31,9 @@ const Warning = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio={'xMidYMid meet'}
       viewBox={'0 0 24 24'}
       role={iconRole}
-      aria-labelledby={titleId}
       {...rest}
     >
-      <title id={titleId}>{titleText}</title>
+      <title>{titleText}</title>
       <path
         d={
           'M10.3512 3.69216C11.084 2.43595 12.916 2.43595 13.6488 3.69216L22.2421 18.4235C22.9749 19.6797 22.0589 21.25 20.5933 21.25H3.40669C1.94111 21.25 1.02512 19.6797 1.75791 18.4235L10.3512 3.69216Z'
