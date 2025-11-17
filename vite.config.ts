@@ -1,3 +1,4 @@
+import { readdirSync } from 'fs';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -5,6 +6,13 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
+const uiEntries = Object.fromEntries(
+  readdirSync(resolve(__dirname, 'src/ui'), { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => [`ui/${dirent.name}/index`, resolve(__dirname, `src/ui/${dirent.name}/index.tsx`)]),
+);
 
 export default defineConfig({
   plugins: [
@@ -37,9 +45,11 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: {
+        index: resolve(__dirname, 'src/index.ts'),
+        ...uiEntries,
+      },
       formats: ['es'],
-      fileName: () => 'index.js',
     },
     // 하나의 CSS로 합치기
     cssCodeSplit: false,

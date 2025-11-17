@@ -13,6 +13,10 @@
     },
     "./index.css": {
       "default": "./dist/index.css"
+    },
+    "./*": {
+      "import": "./dist/ui/*/index.js",
+      "types": "./dist/ui/*/index.d.ts"
     }
   },
   "main": "./dist/index.js",
