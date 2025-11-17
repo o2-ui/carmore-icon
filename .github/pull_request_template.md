@@ -6,7 +6,7 @@
 - [ ] Development Environment Improvements
 - [ ] Component Changes
 
-### ✍🏻 (Optional) Description
+### ✍🏻 Description
 
 <br/>
 
